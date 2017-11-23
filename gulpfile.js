@@ -23,7 +23,7 @@ gulp.task('clean', function(){
 
 // Move files
 gulp.task('files', function() {
-    return gulp.src(['./dev/demo.html'])
+    return gulp.src(['./dev/docs.html'])
         .pipe(gulp.dest('./dist/'));
 });
 
