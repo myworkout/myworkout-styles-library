@@ -21,17 +21,141 @@
         <div class="navigation">
             <a href="#" data-target="#installation">Installation</a>
             <a href="#" data-target="#features">Features</a>
-            <a href="#" data-target="#guidelines">Style Guidelines</a>
+            <a href="#" data-target="#guidelines">Style guidelines</a>
         </div>
     </header>
 
-    <div class="body">
+    <div class="main-wrap">
         <div class="wrap">
             <div id="installation" class="section visible">
                 <h2>Installation</h2>
             </div>
             <div id="features" class="section">
                 <h2>Features</h2>
+                <div class="submenu">
+                    <a href="#" data-target="#elements">Elements</a>
+                    <a href="#" data-target="#sass">SASS</a>
+                </div>
+                <div id="elements" class="subsection visible">
+                    <h3>Elements</h3>
+                </div>
+                <div id="sass" class="subsection">
+                    <h3>SASS</h3>
+                    <p>
+                        Inside MSL you will find <code>vars.scss</code> that holds SASS variables with Myworkout design details.
+                    </p>
+                    <h4>Available variables:</h4>
+                    <div class="rows">
+                        <h5>Font utilities</h5>
+                        <div class="row">
+                            <div class="inline-box">
+                                <code>$mwBrandFontFamily</code> - Default font family
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="inline-box">
+                                <code>$mwDefaultFontSize</code> - Default font size
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="inline-box">
+                                <code>$mwDefaultFontWeight</code> - Default font weight
+                            </div>
+                        </div>
+                        <h5>Colour palette</h5>
+                        <div class="row">
+                            <div class="color-box brand1"></div>
+                            &nbsp;&nbsp;
+                            <div class="inline-box">
+                                <code>$mwColorBrand1</code>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="color-box brand2"></div>
+                            &nbsp;&nbsp;
+                            <div class="inline-box">
+                                <code>$mwColorBrand2</code>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="color-box neutral1"></div>
+                            &nbsp;&nbsp;
+                            <div class="inline-box">
+                                <code>$mwColorNeutral1</code>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="color-box neutral2"></div>
+                            &nbsp;&nbsp;
+                            <div class="inline-box">
+                                <code>$mwColorNeutral2</code>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="color-box neutral3"></div>
+                            &nbsp;&nbsp;
+                            <div class="inline-box">
+                                <code>$mwColorNeutral3</code>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="color-box neutral4"></div>
+                            &nbsp;&nbsp;
+                            <div class="inline-box">
+                                <code>$mwColorNeutral4</code>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="color-box neutral5"></div>
+                            &nbsp;&nbsp;
+                            <div class="inline-box">
+                                <code>$mwColorNeutral5</code>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="color-box neutral6"></div>
+                            &nbsp;&nbsp;
+                            <div class="inline-box">
+                                <code>$mwColorNeutral6</code>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="color-box positive"></div>
+                            &nbsp;&nbsp;
+                            <div class="inline-box">
+                                <code>$mwColorPositiveFeedback</code>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="color-box negative"></div>
+                            &nbsp;&nbsp;
+                            <div class="inline-box">
+                                <code>$mwColorNegativeFeedback</code>
+                            </div>
+                        </div>
+                        <h5>Brand gradient</h5>
+                        <div class="row">
+                            <div class="color-box gradient1"></div>
+                            &nbsp;&nbsp;
+                            <div class="inline-box">
+                                <code>$mwGradientBrand1</code> (expression)
+                            </div>
+                            <div class="example">
+                                <code>selector { background: $mwGradientBrand1; }</code>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="color-box gradient2"></div>
+                            &nbsp;&nbsp;
+                            <div class="inline-box">
+                                <code>$mwGradientBrand2</code> (expression)
+                            </div>
+                            <div class="example">
+                                <code>selector { background: $mwGradientBrand2; }</code>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div id="guidelines" class="section">
                 <h2>Code Style Guidelines</h2>

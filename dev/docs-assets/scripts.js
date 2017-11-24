@@ -7,4 +7,11 @@ jQuery(document).ready(function($) {
         $(target).addClass('visible');
     });
 
+    $('.submenu a').click(function (e) {
+        e.preventDefault();
+        var target = $(this).data('target');
+        $('.section.visible .subsection.visible').removeClass('visible');
+        $(target).addClass('visible');
+    });
+
 });

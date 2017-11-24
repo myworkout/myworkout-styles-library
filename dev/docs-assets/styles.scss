@@ -2,19 +2,27 @@
   Styles for docs.html page
 */
 
+@import "../sass/vars";
+
+// TODO: Remove when MSL implements base rules
+html {
+  background: $mwColorNeutral5;
+  font-size: 16px;
+}
+
 /* Layout rules */
 header {
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
-  padding: 10px 20px;
+  padding: 0.625rem 1.25rem;
   font-size: 0;
   .headings,
   .navigation {
     display: inline-block;
     width: 50%;
-    font-size: 16px; // TODO: Replace with $defaultFontSize when vars.scss is ready
+    font-size: 1rem;
     vertical-align: middle;
   }
   .navigation {
@@ -24,17 +32,81 @@ header {
     margin: 0;
   }
 }
-.body {
-  margin-top: 80px;
+.main-wrap {
+  margin-top: 5rem;
   .wrap {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 1.25rem;
+    background: $mwColorNeutral6;
   }
-  .section {
+  .section,
+  .subsection {
     display: none;
     &.visible {
       display: block;
     }
   }
+}
+
+/* Module rules */
+.color-box {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  border: 1px solid $mwColorNeutral1;
+  &.brand1 {
+    background: $mwColorBrand1;
+  }
+  &.brand2 {
+    background: $mwColorBrand2;
+  }
+  &.neutral1 {
+    background: $mwColorNeutral1;
+  }
+  &.neutral2 {
+    background: $mwColorNeutral2;
+  }
+  &.neutral3 {
+    background: $mwColorNeutral3;
+  }
+  &.neutral4 {
+    background: $mwColorNeutral4;
+  }
+  &.neutral5 {
+    background: $mwColorNeutral5;
+  }
+  &.neutral6 {
+    background: $mwColorNeutral6;
+  }
+  &.positive {
+    background: $mwColorPositiveFeedback;
+  }
+  &.negative {
+    background: $mwColorNegativeFeedback;
+  }
+  &.gradient1 {
+    @include gradientBrandBackground1;
+  }
+  &.gradient2 {
+    @include gradientBrandBackground2;
+  }
+}
+.inline-box {
+  display: inline-block;
+  vertical-align: middle;
+}
+.row {
+  display: block;
+  border-bottom: 1px solid $mwColorNeutral4;
+  padding: 0.625rem 0;
+}
+.description {
+  margin: 0.3125rem 0;
+}
+.example {
+  background: $mwColorNeutral5;
+  padding: 20px;
+  margin: 0.3125rem 0;
 }

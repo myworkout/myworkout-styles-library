@@ -1,0 +1,65 @@
+/*
+
+  vars.scss
+
+  This file provides SASS variables and mixins with Myworkout design details e.g. brand colours, fonts etc.
+  It's going to be compiled and used inside this project, but it will also be distributed as it is to be used by client apps.
+
+*/
+
+/*
+  Fonts
+*/
+$mwBrandFontFamily: 'Muli', sans-serif;
+$mwDefaultFontSize: 16px;
+$mwDefaultFontWeight: 300;
+
+/*
+  Brand colours
+*/
+/*
+* Color palette
+*/
+$mwColorBrand1: #2D4B7B;
+$mwColorBrand2: #0EBBC9;
+$mwColorNeutral1: #293333;
+$mwColorNeutral2: #657272;
+$mwColorNeutral3: #9FB0B1;
+$mwColorNeutral4: #C5CFD0;
+$mwColorNeutral5: #F3F5F5;
+$mwColorNeutral6: #FFFFFF;
+
+/*
+* Color states
+*/
+$mwColorPositiveFeedback: $mwColorBrand2;
+$mwColorNegativeFeedback: #ff1b0f;
+
+/*
+* Color gradients
+*/
+$mwColorGradient1Start: $mwColorBrand2;
+$mwColorGradient1End: #5E46BD;
+$mwGradientBrand1: linear-gradient(to bottom right, $mwColorGradient1Start, $mwColorGradient1End);
+$mwColorGradient2Start: #FF482A;
+$mwColorGradient2End: #FFC255;
+$mwGradientBrand2: linear-gradient(to bottom right, $mwColorGradient2Start, $mwColorGradient2End);
+
+/*
+* Color definitions
+*/
+$mwColorPageBackground: $mwColorNeutral5;
+$mwColorButtonBackground: $mwColorBrand1;
+$mwColorButtonText: $mwColorNeutral6;
+$mwColorParagraphText: $mwColorNeutral1;
+$mwColorParagraphLink: $mwColorBrand1;
+$mwColorMenuBackground: $mwGradientBrand1;
+
+@mixin gradientBrandBackground1 {
+  background: $mwGradientBrand1;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0EBBC9', endColorstr='#5E46BD',GradientType=0 );
+}
+@mixin gradientBrandBackground2 {
+  background: $mwGradientBrand2;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF482A', endColorstr='#FFC255',GradientType=0 );
+}
