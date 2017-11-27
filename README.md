@@ -1,8 +1,8 @@
 #Myworkout Styles Library
 
-``npm run build`` will install dependencies and build the dist/
+``npm run build`` will install dependencies and build files for distribution
 
-``npm run dist`` or ``gulp`` will just build the dist/ folder if node_modules/ already installed
+``npm run dist`` or ``gulp`` will just build files for distribution if node_modules/ is already installed
 
 ``npm run watch`` or ``gulp watch`` to watch for changes, compile and distribute to dist/ on the fly
 

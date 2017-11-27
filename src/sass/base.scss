@@ -1,0 +1,19 @@
+/*
+Provides all MSL base rules
+ */
+
+html {
+  font-family: $mwBrandFontFamily;
+  font-size: $mwDefaultFontSize;
+  font-weight: $mwDefaultFontWeight;
+  background: $mwColorNeutral5;
+  color: $mwColorNeutral1;
+}
+a {
+  color: $mwColorBrand2;
+  &:hover,
+  &:visited,
+  &:active {
+    color: $mwColorBrand1;
+  }
+}

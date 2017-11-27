@@ -1,39 +1,17 @@
 // Load plugins
 var gulp = require('gulp'),
-    del = require('del'),
     runSequence = require('run-sequence'),
     $ = require('gulp-load-plugins')();
 
 // Default
 gulp.task ('default', function (cb) {
-    runSequence('clean', 'styles', 'docs', 'move-sass', cb);
+    runSequence('docs', cb);
 });
 
 // Watch
 gulp.task('watch', function() {
-    gulp.watch('./dev/sass/**/*.scss', ['styles']);
-    gulp.watch('./dev/docs-assets/scripts.js', ['docs-scripts']);
-    gulp.watch('./dev/docs-assets/styles.scss', ['docs-styles']);
-    gulp.watch('./dev/docs.html', ['move-docs']);
-});
-
-// Clean dist
-gulp.task('clean', function(){
-    return del('./dist/');
-});
-
-// Build styles
-//_____________________________________________________
-
-// Styles
-gulp.task('styles', function() {
-    return gulp.src(['./dev/sass/main.scss'])
-        .pipe($.sass())
-        .pipe($.autoprefixer('last 6 version'))
-        .pipe($.concatCss('bundle.css'))
-        .pipe($.rename({ suffix: '.min' }))
-        .pipe($.cssnano())
-        .pipe(gulp.dest('./dist/'));
+    gulp.watch('./src/**/*.scss', ['docs-styles']);
+    gulp.watch('./src/docs-assets/scripts.js', ['docs-scripts']);
 });
 
 //_____________________________________________________
@@ -41,49 +19,35 @@ gulp.task('styles', function() {
 // Build docs
 //_____________________________________________________
 
-// Move docs.html
-gulp.task('move-docs', function() {
-    return gulp.src(['./dev/docs.html'])
-        .pipe(gulp.dest('./dist/'));
-});
-
 // Docs scripts
 gulp.task('docs-scripts', function() {
     return gulp.src([
         './node_modules/jquery/dist/jquery.js',
-        './dev/docs-assets/scripts.js'
+        './src/docs-assets/scripts.js'
     ])
         .pipe($.concat('docs.js'))
         .pipe($.rename({ suffix: '.min' }))
         .pipe($.uglify())
-        .pipe(gulp.dest('./dist/docs-assets/'));
+        .pipe($.header('/* This file is generated. Edit ./scripts.js instead. */'))
+        .pipe(gulp.dest('./src/docs-assets/'));
 });
 
 // Docs styles
 gulp.task('docs-styles', function() {
-    return gulp.src(['./node_modules/normalize.css/normalize.css', './dev/docs-assets/styles.scss'])
+    return gulp.src([
+        './node_modules/normalize.css/normalize.css',
+        './src/docs-assets/styles.scss'
+    ])
         .pipe($.sass())
         .pipe($.autoprefixer('last 6 version'))
         .pipe($.concatCss('docs.css'))
         .pipe($.rename({ suffix: '.min' }))
         .pipe($.cssnano())
-        .pipe(gulp.dest('./dist/docs-assets/'));
+        .pipe($.header('/* This file is generated. Edit ./styles.scss instead. */'))
+        .pipe(gulp.dest('./src/docs-assets/'));
 });
 
 // Docs all
 gulp.task ('docs', function (cb) {
-    runSequence('move-docs', 'docs-scripts', 'docs-styles', cb);
+    runSequence('docs-scripts', 'docs-styles', cb);
 });
-
-//_____________________________________________________
-
-// Distribute sass vars and mixins
-//_____________________________________________________
-
-// Move vars.scss
-gulp.task('move-sass', function() {
-    return gulp.src('./dev/sass/vars.scss')
-        .pipe(gulp.dest('./dist/'));
-});
-
-//_____________________________________________________

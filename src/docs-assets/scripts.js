@@ -1,3 +1,7 @@
+/*
+Scripts for docs.html page
+ */
+
 jQuery(document).ready(function($) {
 
     $('.navigation a').click(function (e) {
