@@ -4,6 +4,26 @@ var gulp = require('gulp'),
     runSequence = require('run-sequence'),
     $ = require('gulp-load-plugins')();
 
+// Default
+gulp.task ('default', function (cb) {
+    runSequence('clean', 'styles', 'docs', 'move-sass', cb);
+});
+
+// Watch
+gulp.task('watch', function() {
+    gulp.watch('./dev/sass/**/*.scss', ['styles']);
+    gulp.watch('./dev/docs-assets/scripts.js', ['docs-scripts']);
+    gulp.watch('./dev/docs-assets/styles.scss', ['docs-styles']);
+    gulp.watch('./dev/docs.html', ['move-docs']);
+});
+
+// Clean dist
+gulp.task('clean', function(){
+    return del('./dist/');
+});
+
+// Build styles
+//_____________________________________________________
 
 // Styles
 gulp.task('styles', function() {
@@ -16,12 +36,9 @@ gulp.task('styles', function() {
         .pipe(gulp.dest('./dist/'));
 });
 
-// Clean dist
-gulp.task('clean', function(){
-    return del('./dist/');
-});
+//_____________________________________________________
 
-// Build Docs
+// Build docs
 //_____________________________________________________
 
 // Move docs.html
@@ -60,15 +77,13 @@ gulp.task ('docs', function (cb) {
 
 //_____________________________________________________
 
-// Default
-gulp.task ('default', function (cb) {
-    runSequence('clean', 'styles', 'docs', cb);
+// Distribute sass vars and mixins
+//_____________________________________________________
+
+// Move vars.scss
+gulp.task('move-sass', function() {
+    return gulp.src('./dev/sass/vars.scss')
+        .pipe(gulp.dest('./dist/'));
 });
 
-// Watch
-gulp.task('watch', function() {
-    gulp.watch('./dev/sass/**/*.scss', ['styles']);
-    gulp.watch('./dev/docs-assets/scripts.js', ['docs-scripts']);
-    gulp.watch('./dev/docs-assets/styles.scss', ['docs-styles']);
-    gulp.watch('./dev/docs.html', ['move-docs']);
-});
+//_____________________________________________________
