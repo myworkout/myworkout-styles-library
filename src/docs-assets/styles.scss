@@ -10,15 +10,16 @@ header {
   top: 0;
   right: 0;
   left: 0;
-  padding: 1rem 1.25rem;
+  padding: 16px 20px;
   font-size: 0;
   background: $mw-gradient-brand-1;
   color: $mw-color-neutral-6;
+  line-height: 1;
   .headings,
   .navigation {
     display: inline-block;
     width: 50%;
-    font-size: 1rem;
+    font-size: $mw-default-font-size;
     vertical-align: middle;
   }
   .navigation {
@@ -34,11 +35,11 @@ header {
   }
 }
 .main-wrap {
-  margin-top: 7rem;
+  margin-top: 110px;
   .wrap {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 1.25rem;
+    padding: 20px;
     background: $mw-color-neutral-6;
   }
   .section,
@@ -101,16 +102,36 @@ header {
 .row {
   display: block;
   border-bottom: 1px solid $mw-color-neutral-4;
-  padding: 0.625rem 0;
+  padding: 10px 0;
 }
 .description {
-  margin: 0.3125rem 0;
+  margin: 5px 0;
 }
 .example {
   background: $mw-color-neutral-5;
   padding: 20px;
-  margin: 0.3125rem 0;
+  margin: 5px 0;
 }
 .underline {
   border-bottom: 1px solid $mw-color-neutral-4;
+}
+.demo {
+  padding: 20px;
+  border: 1px solid$mw-color-neutral-4;
+}
+#base .demo {
+  a {
+    &.force-default {
+      color: $mw-color-brand-2;
+      &:hover {
+        color: $mw-color-brand-1;
+      }
+    }
+    &.force-visited {
+      color: $mw-color-brand-1;
+      &:hover {
+        color: $mw-color-brand-2;
+      }
+    }
+  }
 }
