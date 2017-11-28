@@ -12,8 +12,8 @@ header {
   left: 0;
   padding: 1rem 1.25rem;
   font-size: 0;
-  background: $mwGradientBrand1;
-  color: $mwColorNeutral6;
+  background: $mw-gradient-brand-1;
+  color: $mw-color-neutral-6;
   .headings,
   .navigation {
     display: inline-block;
@@ -24,7 +24,7 @@ header {
   .navigation {
     text-align: right;
     a {
-      color: $mwColorNeutral6;
+      color: $mw-color-neutral-6;
       text-decoration: none;
       margin-left: 10px;
     }
@@ -39,7 +39,7 @@ header {
     max-width: 1000px;
     margin: 0 auto;
     padding: 1.25rem;
-    background: $mwColorNeutral6;
+    background: $mw-color-neutral-6;
   }
   .section,
   .subsection {
@@ -56,42 +56,42 @@ header {
   width: 20px;
   height: 20px;
   vertical-align: middle;
-  border: 1px solid $mwColorNeutral1;
+  border: 1px solid $mw-color-neutral-1;
   &.brand1 {
-    background: $mwColorBrand1;
+    background: $mw-color-brand-1;
   }
   &.brand2 {
-    background: $mwColorBrand2;
+    background: $mw-color-brand-2;
   }
   &.neutral1 {
-    background: $mwColorNeutral1;
+    background: $mw-color-neutral-1;
   }
   &.neutral2 {
-    background: $mwColorNeutral2;
+    background: $mw-color-neutral-2;
   }
   &.neutral3 {
-    background: $mwColorNeutral3;
+    background: $mw-color-neutral-3;
   }
   &.neutral4 {
-    background: $mwColorNeutral4;
+    background: $mw-color-neutral-4;
   }
   &.neutral5 {
-    background: $mwColorNeutral5;
+    background: $mw-color-neutral-5;
   }
   &.neutral6 {
-    background: $mwColorNeutral6;
+    background: $mw-color-neutral-6;
   }
   &.positive {
-    background: $mwColorPositiveFeedback;
+    background: $mw-color-positive-feedback;
   }
   &.negative {
-    background: $mwColorNegativeFeedback;
+    background: $mw-color-negative-feedback;
   }
   &.gradient1 {
-    background: $mwGradientBrand1;
+    background: $mw-gradient-brand-1;
   }
   &.gradient2 {
-    background: $mwGradientBrand2;
+    background: $mw-gradient-brand-2;
   }
 }
 .inline-box {
@@ -100,14 +100,17 @@ header {
 }
 .row {
   display: block;
-  border-bottom: 1px solid $mwColorNeutral4;
+  border-bottom: 1px solid $mw-color-neutral-4;
   padding: 0.625rem 0;
 }
 .description {
   margin: 0.3125rem 0;
 }
 .example {
-  background: $mwColorNeutral5;
+  background: $mw-color-neutral-5;
   padding: 20px;
   margin: 0.3125rem 0;
+}
+.underline {
+  border-bottom: 1px solid $mw-color-neutral-4;
 }
