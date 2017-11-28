@@ -1,10 +1,5 @@
 /*
-
-  vars.scss
-
-  This file provides SASS variables and mixins with Myworkout design details e.g. brand colours, fonts etc.
-  It's going to be compiled and used inside this project, but it will also be distributed as it is to be used by client apps.
-
+Provides SASS variables with Myworkout design details
 */
 
 /*
@@ -54,12 +49,3 @@ $mwColorButtonText: $mwColorNeutral6;
 $mwColorParagraphText: $mwColorNeutral1;
 $mwColorParagraphLink: $mwColorBrand1;
 $mwColorMenuBackground: $mwGradientBrand1;
-
-@mixin gradientBrandBackground1 {
-  background: $mwGradientBrand1;
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0EBBC9', endColorstr='#5E46BD',GradientType=0 );
-}
-@mixin gradientBrandBackground2 {
-  background: $mwGradientBrand2;
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF482A', endColorstr='#FFC255',GradientType=0 );
-}

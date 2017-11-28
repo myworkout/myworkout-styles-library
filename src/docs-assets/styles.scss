@@ -2,13 +2,7 @@
   Styles for docs.html page
 */
 
-@import "../sass/vars";
-
-// TODO: Remove when MSL implements base rules
-html {
-  background: $mwColorNeutral5;
-  font-size: 16px;
-}
+@import "../myworkout-styles-library";
 
 /* Layout rules */
 header {
@@ -16,8 +10,10 @@ header {
   top: 0;
   right: 0;
   left: 0;
-  padding: 0.625rem 1.25rem;
+  padding: 1rem 1.25rem;
   font-size: 0;
+  background: $mwGradientBrand1;
+  color: $mwColorNeutral6;
   .headings,
   .navigation {
     display: inline-block;
@@ -27,13 +23,18 @@ header {
   }
   .navigation {
     text-align: right;
+    a {
+      color: $mwColorNeutral6;
+      text-decoration: none;
+      margin-left: 10px;
+    }
   }
   h1 {
     margin: 0;
   }
 }
 .main-wrap {
-  margin-top: 5rem;
+  margin-top: 7rem;
   .wrap {
     max-width: 1000px;
     margin: 0 auto;
@@ -87,10 +88,10 @@ header {
     background: $mwColorNegativeFeedback;
   }
   &.gradient1 {
-    @include gradientBrandBackground1;
+    background: $mwGradientBrand1;
   }
   &.gradient2 {
-    @include gradientBrandBackground2;
+    background: $mwGradientBrand2;
   }
 }
 .inline-box {
