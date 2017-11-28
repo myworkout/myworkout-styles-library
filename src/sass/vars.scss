@@ -5,9 +5,9 @@ Provides SASS variables with Myworkout design details
 /*
   Fonts
 */
-$mwBrandFontFamily: 'Muli', sans-serif;
-$mwDefaultFontSize: 16px;
-$mwDefaultFontWeight: 300;
+$mw-brand-font-family: 'Muli', sans-serif;
+$mw-default-font-size: 16px;
+$mw-default-font-weight: 300;
 
 /*
   Brand colours
@@ -15,37 +15,37 @@ $mwDefaultFontWeight: 300;
 /*
 * Color palette
 */
-$mwColorBrand1: #2D4B7B;
-$mwColorBrand2: #0EBBC9;
-$mwColorNeutral1: #293333;
-$mwColorNeutral2: #657272;
-$mwColorNeutral3: #9FB0B1;
-$mwColorNeutral4: #C5CFD0;
-$mwColorNeutral5: #F3F5F5;
-$mwColorNeutral6: #FFFFFF;
+$mw-color-brand-1: #2D4B7B;
+$mw-color-brand-2: #0EBBC9;
+$mw-color-neutral-1: #293333;
+$mw-color-neutral-2: #657272;
+$mw-color-neutral-3: #9FB0B1;
+$mw-color-neutral-4: #C5CFD0;
+$mw-color-neutral-5: #F3F5F5;
+$mw-color-neutral-6: #FFFFFF;
 
 /*
 * Color states
 */
-$mwColorPositiveFeedback: $mwColorBrand2;
-$mwColorNegativeFeedback: #ff1b0f;
+$mw-color-positive-feedback: $mw-color-brand-2;
+$mw-color-negative-feedback: #ff1b0f;
 
 /*
 * Color gradients
 */
-$mwColorGradient1Start: $mwColorBrand2;
-$mwColorGradient1End: #5E46BD;
-$mwGradientBrand1: linear-gradient(to bottom right, $mwColorGradient1Start, $mwColorGradient1End);
-$mwColorGradient2Start: #FF482A;
-$mwColorGradient2End: #FFC255;
-$mwGradientBrand2: linear-gradient(to bottom right, $mwColorGradient2Start, $mwColorGradient2End);
+$mw-color-gradient-1-start: $mw-color-brand-2;
+$mw-color-gradient-1-end: #5E46BD;
+$mw-gradient-brand-1: linear-gradient(to bottom right, $mw-color-gradient-1-start, $mw-color-gradient-1-end);
+$mw-color-gradient-2-start: #FF482A;
+$mw-color-gradient-2-end: #FFC255;
+$mw-gradient-brand-2: linear-gradient(to bottom right, $mw-color-gradient-2-start, $mw-color-gradient-2-end);
 
 /*
 * Color definitions
 */
-$mwColorPageBackground: $mwColorNeutral5;
-$mwColorButtonBackground: $mwColorBrand1;
-$mwColorButtonText: $mwColorNeutral6;
-$mwColorParagraphText: $mwColorNeutral1;
-$mwColorParagraphLink: $mwColorBrand1;
-$mwColorMenuBackground: $mwGradientBrand1;
+$mw-color-page-background: $mw-color-neutral-5;
+$mw-color-button-background: $mw-color-brand-1;
+$mw-color-button-text: $mw-color-neutral-6;
+$mw-color-paragraph-text: $mw-color-neutral-1;
+$mw-color-paragraph-link: $mw-color-brand-1;
+$mw-color-menu-background: $mw-gradient-brand-1;

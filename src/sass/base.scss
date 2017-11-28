@@ -3,17 +3,17 @@ Provides all MSL base rules
  */
 
 html {
-  font-family: $mwBrandFontFamily;
-  font-size: $mwDefaultFontSize;
-  font-weight: $mwDefaultFontWeight;
-  background: $mwColorNeutral5;
-  color: $mwColorNeutral1;
+  font-family: $mw-brand-font-family;
+  font-size: $mw-default-font-size;
+  font-weight: $mw-default-font-weight;
+  background: $mw-color-neutral-5;
+  color: $mw-color-neutral-1;
 }
 a {
-  color: $mwColorBrand2;
+  color: $mw-color-brand-2;
   &:hover,
   &:visited,
   &:active {
-    color: $mwColorBrand1;
+    color: $mw-color-brand-1;
   }
 }
