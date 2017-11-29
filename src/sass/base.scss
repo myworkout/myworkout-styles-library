@@ -8,12 +8,50 @@ html {
   font-weight: $mw-default-font-weight;
   background: $mw-color-neutral-5;
   color: $mw-color-neutral-1;
+  line-height: $mw-default-line-height;
 }
 a {
   color: $mw-color-brand-2;
-  &:hover,
+  transition: all .3s ease;
+  &:hover {
+    color: $mw-color-brand-1;
+  }
   &:visited,
   &:active {
     color: $mw-color-brand-1;
+    &:hover {
+      color: $mw-color-brand-2;
+    }
   }
+  &::selection {
+    color: $mw-color-neutral-1;
+  }
+}
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 300;
+}
+h5 {
+  font-weight: 600;
+}
+h6 {
+  font-weight: 600;
+}
+code {
+  background: $mw-color-neutral-5;
+}
+strong,
+b {
+  font-weight: 600;
+}
+blockquote {
+  margin: 20px 0;
+  padding: 20px 20px 20px 40px;
+  border-left: 4px solid $mw-color-neutral-4;
+  background: $mw-color-neutral-5;
+}
+::selection {
+  background: $mw-color-brand-2;
 }
