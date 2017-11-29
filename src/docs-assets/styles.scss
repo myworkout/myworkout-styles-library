@@ -12,20 +12,20 @@ header {
   left: 0;
   padding: 16px 20px;
   font-size: 0;
-  background: $mw-gradient-brand-1;
-  color: $mw-color-neutral-6;
+  background: $mw-bg-gradient-1;
+  color: $color-inverted;
   line-height: 1;
   .headings,
   .navigation {
     display: inline-block;
     width: 50%;
-    font-size: $mw-default-font-size;
+    font-size: $mw-font-size;
     vertical-align: middle;
   }
   .navigation {
     text-align: right;
     a {
-      color: $mw-color-neutral-6;
+      color: $color-inverted;
       text-decoration: none;
       margin-left: 10px;
     }
@@ -40,7 +40,6 @@ header {
     max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
-    background: $mw-color-neutral-6;
   }
   .section,
   .subsection {
@@ -57,42 +56,75 @@ header {
   width: 20px;
   height: 20px;
   vertical-align: middle;
-  border: 1px solid $mw-color-neutral-1;
+  border: 1px solid $MW_COLOR_NEUTRAL_1;
   &.brand1 {
-    background: $mw-color-brand-1;
+    background: $MW_COLOR_BRAND_1;
   }
   &.brand2 {
-    background: $mw-color-brand-2;
+    background: $MW_COLOR_BRAND_2;
   }
   &.neutral1 {
-    background: $mw-color-neutral-1;
+    background: $MW_COLOR_NEUTRAL_1;
   }
   &.neutral2 {
-    background: $mw-color-neutral-2;
+    background: $MW_COLOR_NEUTRAL_2;
   }
   &.neutral3 {
-    background: $mw-color-neutral-3;
+    background: $MW_COLOR_NEUTRAL_3;
   }
   &.neutral4 {
-    background: $mw-color-neutral-4;
+    background: $MW_COLOR_NEUTRAL_4;
   }
   &.neutral5 {
-    background: $mw-color-neutral-5;
+    background: $MW_COLOR_NEUTRAL_5;
   }
   &.neutral6 {
-    background: $mw-color-neutral-6;
+    background: $MW_COLOR_NEUTRAL_6;
   }
-  &.positive {
-    background: $mw-color-positive-feedback;
+  &.accent1 {
+    background: $MW_COLOR_ACCENT_1;
   }
-  &.negative {
-    background: $mw-color-negative-feedback;
+  &.accent2 {
+    background: $MW_COLOR_ACCENT_2;
   }
   &.gradient1 {
-    background: $mw-gradient-brand-1;
+    background: $mw-bg-gradient-1;
   }
   &.gradient2 {
-    background: $mw-gradient-brand-2;
+    background: $mw-bg-gradient-2;
+  }
+  &.text-primary {
+    background: $color-text-primary;
+  }
+  &.text-secondary {
+    background: $color-text-secondary;
+  }
+  &.bg-primary {
+    background: $color-background-primary;
+  }
+  &.bg-secondary {
+    background: $color-background-secondary;
+  }
+  &.border-primary {
+    background: $color-border-primary;
+  }
+  &.border-secondary {
+    background: $color-border-secondary;
+  }
+  &.action {
+    background: $color-action;
+  }
+  &.error {
+    background: $color-error;
+  }
+  &.warning {
+    background: $color-warning;
+  }
+  &.inactive {
+    background: $color-inactive;
+  }
+  &.inverted {
+    background: $color-inverted;
   }
 }
 .inline-box {
@@ -101,36 +133,36 @@ header {
 }
 .row {
   display: block;
-  border-bottom: 1px solid $mw-color-neutral-4;
+  border-bottom: 1px solid $color-border-primary;
   padding: 10px 0;
 }
 .description {
   margin: 5px 0;
 }
 .example {
-  background: $mw-color-neutral-5;
+  background: $color-background-secondary;
   padding: 20px;
   margin: 5px 0;
 }
 .underline {
-  border-bottom: 1px solid $mw-color-neutral-4;
+  border-bottom: 1px solid $color-border-primary;
 }
 .demo {
   padding: 20px;
-  border: 1px solid$mw-color-neutral-4;
+  border: 1px solid $color-border-primary;
 }
 #base .demo {
   a {
     &.force-default {
-      color: $mw-color-brand-2;
+      color: $color-action;
       &:hover {
-        color: $mw-color-brand-1;
+        color: darken($color-action, 20);
       }
     }
     &.force-visited {
-      color: $mw-color-brand-1;
+      color: darken($color-action, 20);
       &:hover {
-        color: $mw-color-brand-2;
+        color: $color-action;
       }
     }
   }

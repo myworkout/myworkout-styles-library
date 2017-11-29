@@ -3,7 +3,8 @@ Provides all MSL components
  */
 
 @import "vendor";
-@import "vars";
+@import "constants";
+@import "variables";
 @import "mixins";
 @import "base";
 @import "elements/index";
