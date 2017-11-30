@@ -1,0 +1,59 @@
+/*
+Provides classes for typography (typography for HTML elements defined in src/sass/base.scss)
+ */
+
+.mw-text {
+  font-family: $mw-font;
+  line-height: $mw-line-height;
+  font-weight: $mw-font-weight;
+}
+.mw-title {
+  @extend .mw-text;
+  font-size: 50px;
+  margin: 20px 0;
+}
+.mw-subtitle {
+  @extend .mw-text;
+  font-size: 35px;
+  margin: 20px 0;
+}
+.mw-heading {
+  @extend .mw-text;
+  font-size: 23px;
+  margin: 15px 0;
+}
+.mw-lead {
+  @extend .mw-text;
+  font-size: 19px;
+}
+.mw-p {
+  @extend .mw-text;
+  font-size: $mw-font-size;
+}
+.mw-quote {
+  margin: 20px 0;
+  padding: 20px 20px 20px 40px;
+  border-left: 4px solid $color-border-primary;
+  background: $color-background-secondary;
+}
+article,
+.mw-article {
+  h1 {
+    @extend .mw-title;
+  }
+  h2 {
+    @extend .mw-subtitle;
+  }
+  h3 {
+    @extend .mw-heading;
+  }
+  p {
+    @extend .mw-p;
+    &.mw-lead {
+      @extend .mw-lead;
+    }
+  }
+  blockquote {
+    @extend .mw-quote;
+  }
+}

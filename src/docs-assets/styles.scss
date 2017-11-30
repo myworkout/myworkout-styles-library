@@ -15,6 +15,9 @@ header {
   background: $mw-bg-gradient-1;
   color: $color-inverted;
   line-height: 1;
+  h1 {
+    font-size: 24px;
+  }
   .headings,
   .navigation {
     display: inline-block;
@@ -35,7 +38,7 @@ header {
   }
 }
 .main-wrap {
-  margin-top: 110px;
+  margin-top: 90px;
   .wrap {
     max-width: 1000px;
     margin: 0 auto;
@@ -47,6 +50,9 @@ header {
     &.visible {
       display: block;
     }
+  }
+  .section {
+    @extend .mw-article;
   }
 }
 
@@ -151,7 +157,7 @@ header {
   padding: 20px;
   border: 1px solid $color-border-primary;
 }
-#base .demo {
+#typo .demo {
   a {
     &.force-default {
       color: $color-action;
@@ -166,4 +172,7 @@ header {
       }
     }
   }
+}
+code {
+  background: $color-background-secondary;
 }
