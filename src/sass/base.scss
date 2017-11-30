@@ -3,28 +3,28 @@ Provides all MSL base rules
  */
 
 html {
-  font-family: $mw-brand-font-family;
-  font-size: $mw-default-font-size;
-  font-weight: $mw-default-font-weight;
-  background: $mw-color-neutral-5;
-  color: $mw-color-neutral-1;
-  line-height: $mw-default-line-height;
+  font-family: $mw-font;
+  font-size: $mw-font-size;
+  font-weight: $mw-font-weight;
+  background: $color-background-primary;
+  color: $color-text-primary;
+  line-height: $mw-line-height;
 }
 a {
-  color: $mw-color-brand-2;
+  color: $color-action;
   transition: all .3s ease;
   &:hover {
-    color: $mw-color-brand-1;
+    color: darken($color-action, 20);
   }
   &:visited,
   &:active {
-    color: $mw-color-brand-1;
+    color: darken($color-action, 20);
     &:hover {
-      color: $mw-color-brand-2;
+      color: $color-action;
     }
   }
   &::selection {
-    color: $mw-color-neutral-1;
+    color: $MW_COLOR_NEUTRAL_1;
   }
 }
 h1,
@@ -40,7 +40,7 @@ h6 {
   font-weight: 600;
 }
 code {
-  background: $mw-color-neutral-5;
+  background: $color-background-secondary;
 }
 strong,
 b {
@@ -49,9 +49,9 @@ b {
 blockquote {
   margin: 20px 0;
   padding: 20px 20px 20px 40px;
-  border-left: 4px solid $mw-color-neutral-4;
-  background: $mw-color-neutral-5;
+  border-left: 4px solid $color-border-primary;
+  background: $color-background-secondary;
 }
 ::selection {
-  background: $mw-color-brand-2;
+  background: $MW_COLOR_BRAND_1;
 }
