@@ -28,6 +28,21 @@
         <div class="wrap">
             <div id="installation" class="section visible">
                 <h2>Installation</h2>
+                <p>
+                    To add Myworkout Styles Library to a project use Node.js:
+                </p>
+                <code>npm install git+ssh://git@bitbucket.org/myworkout/myworkout-styles-library.git --save-dev</code>
+                <p>
+                    Library delivers SASS, so it expects to be compiled by client. For this reason we need it as a dev dependency (<code>--save-dev</code>).
+                </p>
+                <p>
+                    It is recommended to use <code>normalize.css</code> together with this library. In a case of using 3rd party frameworks like Zurb Foundation
+                    or Bootstrap, this is not needed since they already import it.
+                </p>
+                <p>
+                    It is recommended to use complete library inside your project. In order to do that, import <code>/path/to/node_modules/myworkout-styles-library/src/myworkout-styles-library.scss</code>
+                    just after <code>normalize.css</code> or any other CSS framework, and before other project-specific CSS.
+                </p>
             </div>
             <div id="features" class="section">
                 <h2>Features</h2>
