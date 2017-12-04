@@ -27,30 +27,9 @@ a {
     color: $MW_COLOR_NEUTRAL_1;
   }
 }
-h1,
-h2,
-h3,
-h4 {
-  font-weight: 300;
-}
-h5 {
-  font-weight: 600;
-}
-h6 {
-  font-weight: 600;
-}
-code {
-  background: $color-background-secondary;
-}
 strong,
 b {
   font-weight: 600;
-}
-blockquote {
-  margin: 20px 0;
-  padding: 20px 20px 20px 40px;
-  border-left: 4px solid $color-border-primary;
-  background: $color-background-secondary;
 }
 ::selection {
   background: $MW_COLOR_BRAND_1;
