@@ -1,3 +1,71 @@
 /*
 Provides SASS mixins
  */
+
+@mixin mw-button ($button-color, $text-color, $type: null) {
+  $height: 44px;
+  $border-width: 1px;
+  $hover-darken: 7;
+  $active-darken: 14;
+  $color-background: $button-color;
+  $color-background-hover: darken($button-color, $hover-darken);
+  $color-background-active: darken($button-color, $active-darken);
+  $color-border: $button-color;
+  $color-border-hover: darken($button-color, $hover-darken);
+  $color-border-active: darken($button-color, $active-darken);
+  $color-text: $text-color;
+  $color-text-hover: $text-color;
+  $color-text-active: $text-color;
+  $color-border-focus: darken($button-color, $active-darken);
+  @if $type == negative {
+    $color-background: none;
+    $color-background-hover: none;
+    $color-background-active: none;
+    $color-border: $button-color;
+    $color-border-hover: darken($button-color, $hover-darken);
+    $color-border-active: darken($button-color, $active-darken);
+    $color-text: $text-color;
+    $color-text-hover: darken($button-color, $hover-darken);
+    $color-text-active: darken($button-color, $active-darken);
+    $color-border-focus: $text-color;
+  }
+  @if $type == simple {
+    $color-background-hover: rgba($button-color, .1);
+    $color-background-active: rgba($button-color, .2);
+    $color-text-hover: darken($text-color, $hover-darken);
+    $color-border-focus: $text-color;
+    $color-background: transparent;
+    $color-border: transparent;
+  }
+  display: inline-block;
+  font-family: $mw-font;
+  font-weight: $mw-font-weight;
+  line-height: $height - $border-width * 2;
+  font-size: 19px;
+  color: $color-text;
+  border: 1px solid $color-border;
+  background: $color-background;
+  margin: 0;
+  padding: 0 24px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all .3s ease;
+  &:hover {
+    color: $color-text-hover;
+    border-color: $color-border-hover;
+    background-color: $color-background-hover;
+  }
+  &:active {
+    color: $color-text-active;
+    border-color: $color-border-active;
+    background-color: $color-background-active;
+  }
+  &:focus {
+    outline: none;
+    border-color: $color-border-focus;
+    box-shadow: 0 0 0 1px $color-border-focus;
+  }
+  &.mw-full-width {
+    width: 100%;
+  }
+}

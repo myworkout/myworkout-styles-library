@@ -6,21 +6,24 @@ html {
   font-family: $mw-font;
   font-size: $mw-font-size;
   font-weight: $mw-font-weight;
-  background: $color-background-primary;
-  color: $color-text-primary;
+  background: $mw-color-background-primary;
+  color: $mw-color-text-primary;
   line-height: $mw-line-height;
 }
+div {
+  box-sizing: border-box;
+}
 a {
-  color: $color-action;
+  color: $mw-color-action;
   transition: all .3s ease;
   &:hover {
-    color: darken($color-action, 20);
+    color: darken($mw-color-action, 20);
   }
   &:visited,
   &:active {
-    color: darken($color-action, 20);
+    color: darken($mw-color-action, 20);
     &:hover {
-      color: $color-action;
+      color: $mw-color-action;
     }
   }
   &::selection {
@@ -32,5 +35,5 @@ b {
   font-weight: 600;
 }
 ::selection {
-  background: $MW_COLOR_BRAND_1;
+  background: lighten($MW_COLOR_BRAND_1, 20);
 }

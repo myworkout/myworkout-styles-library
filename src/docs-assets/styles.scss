@@ -2,7 +2,8 @@
   Styles for docs.html page
 */
 
-@import "../myworkout-styles-library";
+$mw-path-to-node-modules: "this/will/be/overriden";
+@import "../all";
 
 /* Layout rules */
 header {
@@ -13,8 +14,9 @@ header {
   padding: 16px 20px;
   font-size: 0;
   background: $mw-bg-gradient-1;
-  color: $color-inverted;
+  color: $mw-color-inverted;
   line-height: 1;
+  z-index: 9999;
   h1 {
     font-size: 24px;
   }
@@ -28,7 +30,7 @@ header {
   .navigation {
     text-align: right;
     a {
-      color: $color-inverted;
+      color: $mw-color-inverted;
       text-decoration: none;
       margin-left: 10px;
     }
@@ -100,37 +102,37 @@ header {
     background: $mw-bg-gradient-2;
   }
   &.text-primary {
-    background: $color-text-primary;
+    background: $mw-color-text-primary;
   }
   &.text-secondary {
-    background: $color-text-secondary;
+    background: $mw-color-text-secondary;
   }
   &.bg-primary {
-    background: $color-background-primary;
+    background: $mw-color-background-primary;
   }
   &.bg-secondary {
-    background: $color-background-secondary;
+    background: $mw-color-background-secondary;
   }
   &.border-primary {
-    background: $color-border-primary;
+    background: $mw-color-border-primary;
   }
   &.border-secondary {
-    background: $color-border-secondary;
+    background: $mw-color-border-secondary;
   }
   &.action {
-    background: $color-action;
+    background: $mw-color-action;
   }
   &.error {
-    background: $color-error;
+    background: $mw-color-error;
   }
   &.warning {
-    background: $color-warning;
+    background: $mw-color-warning;
   }
   &.inactive {
-    background: $color-inactive;
+    background: $mw-color-inactive;
   }
   &.inverted {
-    background: $color-inverted;
+    background: $mw-color-inverted;
   }
 }
 .inline-box {
@@ -139,40 +141,59 @@ header {
 }
 .row {
   display: block;
-  border-bottom: 1px solid $color-border-primary;
   padding: 10px 0;
 }
 .description {
   margin: 5px 0;
 }
 .example {
-  background: $color-background-secondary;
+  background: $mw-color-background-secondary;
   padding: 20px;
   margin: 5px 0;
 }
 .underline {
-  border-bottom: 1px solid $color-border-primary;
+  border-bottom: 1px solid $mw-color-border-primary;
 }
 .demo {
   padding: 20px;
-  border: 1px solid $color-border-primary;
+  border: 1px solid $mw-color-border-primary;
+  margin-bottom: 20px;
 }
 #typo .demo {
   a {
     &.force-default {
-      color: $color-action;
+      color: $mw-color-action;
       &:hover {
-        color: darken($color-action, 20);
+        color: darken($mw-color-action, 20);
       }
     }
     &.force-visited {
-      color: darken($color-action, 20);
+      color: darken($mw-color-action, 20);
       &:hover {
-        color: $color-action;
+        color: $mw-color-action;
       }
     }
   }
 }
-code {
-  background: $color-background-secondary;
+code,
+pre {
+  background: $mw-color-background-secondary;
+}
+.negative-bg {
+  display: inline-block;
+  padding-left: 10px;
+  background: $MW_COLOR_NEUTRAL_2;
+}
+.mw-input.mw-error,
+.mw-special-input-wrap.mw-error input {
+  background-image: url("../images/forms/error-star.svg");
+}
+.mw-checkbox-wrap input[type="checkbox"]:checked + label:after {
+  background-image: url("../images/forms/check-white.svg");
+}
+.mw-negative-checkbox-wrap input[type="checkbox"]:checked + label:after {
+  background-image: url("../images/forms/check-negative.svg");
+}
+.mw-select-wrap {
+  background-image: url("../images/forms/down-arrow-white.svg");
 }
