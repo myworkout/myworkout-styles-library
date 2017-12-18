@@ -31,17 +31,26 @@
                 <p>
                     To add Myworkout Styles Library to a project use Node.js:
                 </p>
-                <code>npm install git+ssh://git@bitbucket.org/myworkout/myworkout-styles-library.git --save-dev</code>
+                <code>npm install git+ssh://git@bitbucket.org/myworkout/myworkout-styles-library.git --save</code>
                 <p>
-                    Library delivers SASS, so it expects to be compiled by client. For this reason we need it as a dev dependency (<code>--save-dev</code>).
+                    Library delivers SASS, so it expects to be compiled by client application. However, it also provides common assets (images) and
+                    it should be available in production too (hence <code>--save</code>).
                 </p>
+                <h3>Setup</h3>
+                <p>
+                    Top level SASS file of client application should import Myworkout Styles Library like this:
+                </p>
+                <pre>@import "path/to/node_modules/normalize.css/normalize.css";
+$mw-path-to-node-modules: "relative/path/to/node_modules";
+@import "path/to/node_modules/myworkout-styles-library/src/all";</pre>
                 <p>
                     It is recommended to use <code>normalize.css</code> together with this library. In a case of using 3rd party frameworks like Zurb Foundation
                     or Bootstrap, this is not needed since they already import it.
                 </p>
                 <p>
-                    It is recommended to use complete library inside your project. In order to do that, import <code>/path/to/node_modules/myworkout-styles-library/src/myworkout-styles-library.scss</code>
-                    just after <code>normalize.css</code> or any other CSS framework, and before other project-specific CSS.
+                    Library requires <code>$mw-path-to-node-modules</code> SASS variable to be set before importing the library itself. It should provide
+                    client-specific path to <code>node_modules</code> folder, in a form of a path relative to the file where this library is
+                    going to be compiled by the client.
                 </p>
             </div>
             <div id="features" class="section">
@@ -111,7 +120,233 @@
                     </div>
                 </div>
                 <div id="elements" class="subsection">
-                    <h3 class="underline">Elements</h3>
+                    <h3>Elements</h3>
+                    <div class="demo">
+                        <h3>Buttons</h3>
+                        <div class="row">
+                            <button class="mw-button">Button</button> <code>.mw-button</code>
+                        </div>
+                        <div class="row">
+                            <button class="mw-button-negative">Button</button> <code>.mw-button-negative</code>
+                        </div>
+                        <div class="row">
+                            <button class="mw-button-simple">Button</button> <code>.mw-button-simple</code>
+                        </div>
+                        <div class="row">
+                            <button class="mw-button mw-full-width">Button</button> <code>.mw-button.mw-full-width</code> <sup>*1</sup>
+                        </div>
+                        <div class="row">
+                            <button class="mw-button-negative mw-full-width">Button</button> <code>.mw-button-negative.mw-full-width</code> <sup>*1</sup>
+                        </div>
+                        <blockquote>
+                            <sup>*1</sup> This button will take 100% width of its positioned parent if <code>.mw-full-width</code> is added to it.
+                        </blockquote>
+                    </div>
+                    <div class="demo">
+                        <h3>Form elements: Text inputs</h3>
+                        <p>
+                            Text inputs are supposed to be used mainly with inputs of type <code>text</code>, <code>password</code>, <code>email</code> and similar.
+                            It is recommended to use them with <code>.mw-full-width</code> class for device responsivity.
+                        </p>
+                        <div class="row">
+                            <label class="mw-label">Label text</label>
+                            <code>label.mw-label</code>
+                        </div>
+                        <div class="row">
+                            <input class="mw-input" type="text" placeholder="Input">
+                            <code>input.mw-input</code>
+                        </div>
+                        <div class="row">
+                            <div class="mw-special-input-wrap">
+                                <input type="text" placeholder="Special input">
+                            </div>
+                            <code>div.mw-special-input-wrap input</code> <sup>*2</sup>
+                        </div>
+                        <div class="row">
+                            <input class="mw-input mw-error" type="text" placeholder="Input error">
+                            <code>input.mw-input.mw-error</code> <sup>*3</sup>
+                        </div>
+                        <div class="row">
+                            <div class="mw-special-input-wrap mw-error">
+                                <input type="text" placeholder="Special input error">
+                            </div>
+                            <code>div.mw-special-input-wrap.mw-error input</code> <sup>*2</sup> <sup>*3</sup>
+                        </div>
+                        <div class="row">
+                            <input class="mw-input mw-full-width" type="text" placeholder="Input full width">
+                            <code>input.mw-input.mw-full-width</code> <sup>*4</sup>
+                        </div>
+                        <div class="row">
+                            <div class="mw-special-input-wrap mw-full-width">
+                                <input type="text" placeholder="Special input full width">
+                            </div>
+                            <code>div.mw-special-input-wrap.mw-full-width input</code> <sup>*2</sup> <sup>*4</sup>
+                        </div>
+                        <div class="row">
+                            <input class="mw-input mw-full-width mw-error" type="text" placeholder="Input error full width">
+                            <code>input.mw-input.mw-full-width.mw-error</code> <sup>*3</sup> <sup>*4</sup>
+                        </div>
+                        <div class="row">
+                            <div class="mw-special-input-wrap mw-full-width mw-error">
+                                <input type="text" placeholder="Special input error full width">
+                            </div>
+                            <code>div.mw-special-input-wrap.mw-full-width.mw-error input</code> <sup>*2</sup> <sup>*3</sup> <sup>*4</sup>
+                        </div>
+                        <blockquote>
+                            <sup>*2</sup> This element requires an HTML container as wrapper.
+                            <pre>&lt;div class="mw-input-wrap"&gt;
+    &lt;input&gt;
+&lt;/div&gt;</pre>
+                        </blockquote>
+                        <blockquote>
+                            <sup>*3</sup> Meant to be used for raising a warning or indicating an error by using JavaScript to add <code>mw-error</code> class on input (basic inputs) or wrapper (special ones).
+                        </blockquote>
+                        <blockquote>
+                            <sup>*4</sup> This input takes 100% width of its positioned parent, by adding <code>mw-full-width</code> class on input (basic inputs) or wrapper (special ones).
+                        </blockquote>
+                        <h3>Form elements: Checkboxes</h3>
+                        <div class="row">
+                            <div class="mw-checkbox-wrap">
+                                <input id="checkbox-1" type="checkbox" value="value1">
+                                <label for="checkbox-1">Basic checkbox</label>
+                            </div>
+                            <code>div.mw-checkbox-wrap input[type="checkbox"] + label</code> <sup>*5</sup>
+                        </div>
+                        <div class="row">
+                            <div class="mw-special-checkbox-fluid-wrap">
+                                <input id="checkbox-2" type="checkbox" value="value1">
+                                <label for="checkbox-2">Special checkbox fluid</label>
+                            </div>
+                            <br />
+                            <code>div.mw-special-checkbox-fluid-wrap input[type="checkbox"] + label</code> <sup>*5</sup> <sup>*6</sup>
+                        </div>
+                        <div class="row">
+                            <div class="mw-special-checkbox-wrap">
+                                <input id="checkbox-3" type="checkbox" value="value1">
+                                <label for="checkbox-3">Special checkbox</label>
+                            </div>
+                            <br />
+                            <code>div.mw-special-checkbox-wrap input[type="checkbox"] + label</code> <sup>*5</sup> <sup>*7</sup>
+                        </div>
+                        <div class="row">
+                            <div class="mw-special-checkbox-wrap mw-full-width">
+                                <input id="checkbox-4" type="checkbox" value="value1">
+                                <label for="checkbox-4">Special checkbox full width</label>
+                            </div>
+                            <code>div.mw-special-checkbox-wrap.mw-full-width input[type="checkbox"] + label</code> <sup>*5</sup> <sup>*8</sup>
+                        </div>
+                        <div class="row">
+                            <div class="negative-bg">
+                                <div class="mw-negative-checkbox-wrap">
+                                    <input id="checkbox-5" type="checkbox" value="value1">
+                                    <label for="checkbox-5">Negative checkbox</label>
+                                </div>
+                            </div>
+                            <code>div.mw-negative-checkbox-wrap input[type="checkbox"] + label</code> <sup>*5</sup> <sup>*9</sup>
+                        </div>
+                        <blockquote>
+                            <sup>*5</sup> This element requires an HTML container as wrapper.
+                            <pre>&lt;div class="mw-checkbox-wrap"&gt;
+    &lt;input type="checkbox" id="chckbx-id"&gt;
+    &lt;label for="chckbx-id"&gt;Checkbox label here&lt;/label&gt;
+&lt;/div&gt;</pre>
+                        </blockquote>
+                        <blockquote>
+                            <sup>*6</sup> The width of this element will adapt to the width of its label.
+                        </blockquote>
+                        <blockquote>
+                            <sup>*7</sup> The width of this element is fixed (same width as text input elements that are not full width) and it is NOT responsive.
+                        </blockquote>
+                        <blockquote>
+                            <sup>*8</sup> This checkbox will take 100% width of its positioned parent, by adding <code>mw-full-width</code> class on wrapper.
+                        </blockquote>
+                        <blockquote>
+                            <sup>*9</sup> Background colour not included.
+                        </blockquote>
+                    </div>
+                    <div class="demo">
+                        <h3>Form elements: Select</h3>
+                        <div class="row">
+                            <div class="mw-select-wrap">
+                                <select title="Workouts">
+                                    <option value="1">Select option 1</option>
+                                    <option value="2">Select option 2</option>
+                                    <option value="3">Select option 3</option>
+                                    <option value="4">Select option 4</option>
+                                </select>
+                            </div>
+                            <code>div.mw-select-wrap select</code> <sup>*10</sup> <sup>*11</sup>
+                        </div>
+                        <div class="row">
+                            <div class="mw-select-fluid-wrap">
+                                <select title="Workouts">
+                                    <option value="1">Select option 1</option>
+                                    <option value="2">Select option 2</option>
+                                    <option value="3">Select option 3</option>
+                                    <option value="4">Select option 4</option>
+                                </select>
+                            </div>
+                            <code>div.mw-select-fluid-wrap select</code> <sup>*10</sup> <sup>*12</sup>
+                        </div>
+                        <div class="row">
+                            <div class="mw-select-wrap mw-full-width">
+                                <select title="Workouts">
+                                    <option value="1">Select option 1</option>
+                                    <option value="2">Select option 2</option>
+                                    <option value="3">Select option 3</option>
+                                    <option value="4">Select option 4</option>
+                                </select>
+                            </div>
+                            <code>div.mw-select-wrap.mw-full-width select</code> <sup>*10</sup> <sup>*13</sup>
+                        </div>
+                        <div class="row">
+                            <div class="mw-select-wrap mw-error">
+                                <select title="Workouts">
+                                    <option value="1">Select option 1</option>
+                                    <option value="2">Select option 2</option>
+                                    <option value="3">Select option 3</option>
+                                    <option value="4">Select option 4</option>
+                                </select>
+                            </div>
+                            <code>div.mw-select-wrap.mw-error select</code> <sup>*10</sup> <sup>*14</sup>
+                        </div>
+                        <blockquote>
+                            <sup>*10</sup> This element requires an HTML container as wrapper.
+                            <pre>&lt;div class="mw-select-wrap"&gt;
+    &lt;select title="Something"&gt;
+        &lt;option&gt;Option&lt;/option&gt;
+    &lt;/select&gt;
+&lt;/div&gt;</pre>
+                        </blockquote>
+                        <blockquote>
+                            <sup>*11</sup> The width of this element is fixed (same width as text input elements that are not full width) and it is NOT responsive.
+                        </blockquote>
+                        <blockquote>
+                            <sup>*12</sup> The width of this element will adapt to the width of its widest option plus right padding and arrow.
+                        </blockquote>
+                        <blockquote>
+                            <sup>*13</sup> This select box will take 100% width of its positioned parent, by adding <code>mw-full-width</code> class together with <code>mw-select-wrap</code> on wrapper.
+                        </blockquote>
+                        <blockquote>
+                            <sup>*14</sup> Meant to be used for raising a warning or indicating an error by using JavaScript to add <code>mw-error</code> class on a wrapper element. This work for all 3 select types.
+                        </blockquote>
+                    </div>
+                    <div class="demo">
+                        <h3>Form elements: Switch</h3>
+                        <div class="row">
+                            <div class="mw-switch">
+                                <input type="checkbox" id="switch">
+                                <label for="switch">Switch demo</label>
+                            </div>
+                            <code>div.mw-switch input[type="checkbox"] + label</code> <sup>*15</sup>
+                        </div>
+                        <blockquote>
+                            <sup>*15</sup> This element requires an HTML container as wrapper.
+                            <pre>&lt;div class="mw-switch"&gt;
+    &lt;input type="checkbox" id="switch-id"&gt;
+    &lt;label for="switch-id"&gt;Switch label here&lt;/label&gt;
+&lt;/div&gt;</pre>
+                    </div>
                 </div>
                 <div id="sass" class="subsection">
                     <h3 class="underline">SASS variables and constants</h3>
@@ -245,77 +480,77 @@
                             <div class="color-box text-primary"></div>
                             &nbsp;&nbsp;
                             <div class="inline-box">
-                                <code>$color-text-primary</code>
+                                <code>$mw-color-text-primary</code>
                             </div>
                         </div>
                         <div class="row">
                             <div class="color-box text-secondary"></div>
                             &nbsp;&nbsp;
                             <div class="inline-box">
-                                <code>$color-text-secondary</code>
+                                <code>$mw-color-text-secondary</code>
                             </div>
                         </div>
                         <div class="row">
                             <div class="color-box bg-primary"></div>
                             &nbsp;&nbsp;
                             <div class="inline-box">
-                                <code>$color-background-primary</code>
+                                <code>$mw-color-background-primary</code>
                             </div>
                         </div>
                         <div class="row">
                             <div class="color-box bg-secondary"></div>
                             &nbsp;&nbsp;
                             <div class="inline-box">
-                                <code>$color-background-secondary</code>
+                                <code>$mw-color-background-secondary</code>
                             </div>
                         </div>
                         <div class="row">
                             <div class="color-box border-primary"></div>
                             &nbsp;&nbsp;
                             <div class="inline-box">
-                                <code>$color-border-primary</code>
+                                <code>$mw-color-border-primary</code>
                             </div>
                         </div>
                         <div class="row">
                             <div class="color-box border-secondary"></div>
                             &nbsp;&nbsp;
                             <div class="inline-box">
-                                <code>$color-border-secondary</code>
+                                <code>$mw-color-border-secondary</code>
                             </div>
                         </div>
                         <div class="row">
                             <div class="color-box action"></div>
                             &nbsp;&nbsp;
                             <div class="inline-box">
-                                <code>$color-action</code>
+                                <code>$mw-color-action</code>
                             </div>
                         </div>
                         <div class="row">
                             <div class="color-box error"></div>
                             &nbsp;&nbsp;
                             <div class="inline-box">
-                                <code>$color-error</code>
+                                <code>$mw-color-error</code>
                             </div>
                         </div>
                         <div class="row">
                             <div class="color-box warning"></div>
                             &nbsp;&nbsp;
                             <div class="inline-box">
-                                <code>$color-warning</code>
+                                <code>$mw-color-warning</code>
                             </div>
                         </div>
                         <div class="row">
                             <div class="color-box inactive"></div>
                             &nbsp;&nbsp;
                             <div class="inline-box">
-                                <code>$color-inactive</code>
+                                <code>$mw-color-inactive</code>
                             </div>
                         </div>
                         <div class="row">
                             <div class="color-box inverted"></div>
                             &nbsp;&nbsp;
                             <div class="inline-box">
-                                <code>$color-inverted</code>
+                                <code>$mw-color-inverted</code>
                             </div>
                         </div>
                         <div class="row">
