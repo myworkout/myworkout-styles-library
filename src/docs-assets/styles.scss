@@ -184,6 +184,10 @@ pre {
   padding-left: 10px;
   background: $MW_COLOR_NEUTRAL_2;
 }
+.skin-demo {
+  height: 100px;
+  padding: 20px;
+}
 .mw-input.mw-error,
 .mw-special-input-wrap.mw-error input {
   background-image: url("../images/forms/error-star.svg");
