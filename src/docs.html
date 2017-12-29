@@ -197,6 +197,7 @@ $mw-path-to-node-modules: "relative/path/to/node_modules";
                             <pre>&lt;div class="mw-input-wrap"&gt;
     &lt;input&gt;
 &lt;/div&gt;</pre>
+                            If input should be disabled, in addition to <code>disabled</code> attribute on input there should be <code>mw-disabled</code> class on the wrapper.
                         </blockquote>
                         <blockquote>
                             <sup>*3</sup> Meant to be used for raising a warning or indicating an error by using JavaScript to add <code>mw-error</code> class on input (basic inputs) or wrapper (special ones).
@@ -204,6 +205,8 @@ $mw-path-to-node-modules: "relative/path/to/node_modules";
                         <blockquote>
                             <sup>*4</sup> This input takes 100% width of its positioned parent, by adding <code>mw-full-width</code> class on input (basic inputs) or wrapper (special ones).
                         </blockquote>
+                    </div>
+                    <div class="demo">
                         <h3>Form elements: Checkboxes</h3>
                         <div class="row">
                             <div class="mw-checkbox-wrap">
@@ -250,6 +253,7 @@ $mw-path-to-node-modules: "relative/path/to/node_modules";
     &lt;input type="checkbox" id="chckbx-id"&gt;
     &lt;label for="chckbx-id"&gt;Checkbox label here&lt;/label&gt;
 &lt;/div&gt;</pre>
+                            For checkboxes with underline, if input should be disabled, in addition to <code>disabled</code> attribute on input there should be <code>mw-disabled</code> class on the wrapper.
                         </blockquote>
                         <blockquote>
                             <sup>*6</sup> The width of this element will adapt to the width of its label.
@@ -317,6 +321,7 @@ $mw-path-to-node-modules: "relative/path/to/node_modules";
         &lt;option&gt;Option&lt;/option&gt;
     &lt;/select&gt;
 &lt;/div&gt;</pre>
+                            If select box should be disabled, in addition to <code>disabled</code> attribute on input there should be <code>mw-disabled</code> class on the wrapper.
                         </blockquote>
                         <blockquote>
                             <sup>*11</sup> The width of this element is fixed (same width as text input elements that are not full width) and it is NOT responsive.
@@ -335,7 +340,7 @@ $mw-path-to-node-modules: "relative/path/to/node_modules";
                         <h3>Form elements: Switch</h3>
                         <div class="row">
                             <div class="mw-switch">
-                                <input type="checkbox" id="switch">
+                                <input type="checkbox" id="switch" disabled>
                                 <label for="switch">Switch demo</label>
                             </div>
                             <code>div.mw-switch input[type="checkbox"] + label</code> <sup>*15</sup>
@@ -346,6 +351,7 @@ $mw-path-to-node-modules: "relative/path/to/node_modules";
     &lt;input type="checkbox" id="switch-id"&gt;
     &lt;label for="switch-id"&gt;Switch label here&lt;/label&gt;
 &lt;/div&gt;</pre>
+                        </blockquote>
                     </div>
                 </div>
                 <div id="sass" class="subsection">

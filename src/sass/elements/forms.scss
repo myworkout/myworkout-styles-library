@@ -15,6 +15,10 @@ Provides classes for form elements
   &::placeholder {
     color: $MW_COLOR_NEUTRAL_4;
   }
+  &:disabled {
+    cursor: auto;
+    opacity: .6;
+  }
 }
 .mw-input-underline {
   &::after {
@@ -26,6 +30,11 @@ Provides classes for form elements
   &.mw-error {
     &::after {
       background: linear-gradient(90deg, $MW_COLOR_ACCENT_1, $MW_COLOR_ACCENT_2);
+    }
+  }
+  &.mw-disabled {
+    &::after {
+      opacity: .3;
     }
   }
 }
@@ -221,9 +230,16 @@ Provides classes for form elements
     &:focus {
       outline: none;
     }
+    &:disabled {
+      cursor: auto;
+    }
   }
   &.mw-error {
     border: 2px solid $MW_COLOR_ACCENT_1;
+  }
+  &.mw-disabled {
+    background-color: $MW_COLOR_NEUTRAL_4;
+    border-color: $MW_COLOR_NEUTRAL_4;
   }
 }
 .mw-select-fluid-wrap {
@@ -286,9 +302,9 @@ Provides classes for form elements
       background-color: $MW_COLOR_BRAND_1;
       border-color: $MW_COLOR_BRAND_1;
     }
-    &:disabled + label:before,
-    &:disabled + label:after {
+    &:disabled + label {
       opacity: .5;
+      cursor: auto;
     }
   }
 }
