@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="70px" height="70px" viewBox="0 0 70 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Page icon group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="35" cy="35" r="35"></circle>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Page-icon-group">
+            <g id="Profile-picture-placeholder">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Oval" fill="#F3F5F5" xlink:href="#path-1"></use>
+                <g id="User-icon-Copy" mask="url(#mask-2)">
+                    <g transform="translate(-7.000000, 21.000000)">
+                        <g id="Group" transform="translate(0.000000, 1.000000)">
+                            <path d="M18.5,0 C13.2532949,0 9,4.02943725 9,9 C9,13.9705627 13.2532949,18 18.5,18 C23.7467051,18 28,13.9705627 28,9 C27.9950122,4.03139583 23.7446377,0.00472525681 18.5,0 Z" id="Shape-Copy" fill="#C5CFD0" fill-rule="nonzero"></path>
+                            <path d="M0,29.2333414 C4.74723015,24.5175139 11.4830597,21.8852606 18.5,22.0038404 C25.5169403,21.8852606 32.2527699,24.5175139 37,29.2333414 C28.7673394,34.4111138 22.592844,37 18.4765137,37 C14.3706217,37 8.21178385,34.4111138 0,29.2333414 Z" id="Shape-Copy-2" fill="#C5CFD0"></path>
+                        </g>
+                        <g id="Group-Copy" transform="translate(47.000000, 1.000000)">
+                            <path d="M18.5,0 C13.2532949,0 9,4.02943725 9,9 C9,13.9705627 13.2532949,18 18.5,18 C23.7467051,18 28,13.9705627 28,9 C27.9950122,4.03139583 23.7446377,0.00472525681 18.5,0 Z" id="Shape-Copy" fill="#C5CFD0" fill-rule="nonzero"></path>
+                            <path d="M0,29.2333414 C4.74723015,24.5175139 11.4830597,21.8852606 18.5,22.0038404 C25.5169403,21.8852606 32.2527699,24.5175139 37,29.2333414 C28.7673394,34.4111138 22.592844,37 18.4765137,37 C14.3706217,37 8.21178385,34.4111138 0,29.2333414 Z" id="Shape-Copy-2" fill="#C5CFD0"></path>
+                        </g>
+                        <g id="Group-2" transform="translate(15.000000, 0.000000)">
+                            <path d="M27,0 C20.372583,0 15,5.372583 15,12 C15,18.627417 20.372583,24 27,24 C33.627417,24 39,18.627417 39,12 C38.9936997,5.37519444 33.6248056,0.00630034241 27,0 Z" id="Shape" fill="#9FB0B1" fill-rule="nonzero"></path>
+                            <path d="M0,40.5733463 C6.92838994,33.0280222 16.7590601,28.8164169 27,29.0061447 C37.2409399,28.8164169 47.0716101,33.0280222 54,40.5733463 C41.9847656,48.8577821 32.9733398,53 26.9657227,53 C20.9733398,53 11.9847656,48.8577821 0,40.5733463 Z" id="Shape" fill="#9FB0B1"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
