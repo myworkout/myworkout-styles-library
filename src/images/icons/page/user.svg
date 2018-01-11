@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="70px" height="70px" viewBox="0 0 70 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Page icon user</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="35" cy="35" r="35"></circle>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Page-icon-user">
+            <g id="Profile-picture-placeholder">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Oval" fill="#F3F5F5" xlink:href="#path-1"></use>
+                <g id="User-icon-Copy" mask="url(#mask-2)" fill="#9FB0B1">
+                    <g transform="translate(7.000000, 14.000000)" id="Shape">
+                        <path d="M28,0 C19.8998237,0 13.3333333,6.48373085 13.3333333,14.4818182 C13.3333333,22.4799055 19.8998237,28.9636364 28,28.9636364 C36.1001763,28.9636364 42.6666667,22.4799055 42.6666667,14.4818182 C42.6589662,6.48688239 36.0969846,0.00760336778 28,0 Z" fill-rule="nonzero"></path>
+                        <path d="M0,46.4119476 C7.18499698,38.7875764 17.3797661,34.531849 28,34.7235644 C38.6202339,34.531849 48.815003,38.7875764 56,46.4119476 C43.5397569,54.7831737 34.1945747,58.9687867 27.9644531,58.9687867 C21.7501302,58.9687867 12.4286458,54.7831737 0,46.4119476 Z" fill-rule="evenodd"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
