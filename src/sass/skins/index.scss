@@ -3,12 +3,15 @@ Provides all MSL skin classes: partial styles for HTML elements
  */
 
 .mw-brand-bg {
+  position: relative;
   background: $mw-bg-gradient-1;
-  color: $MW_COLOR_NEUTRAL_6;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0EBBC9', endColorstr='#5E46BD',GradientType=0 );
+  color: $mw-color-inverted;
 }
 .mw-accent-bg {
   background: $mw-bg-gradient-2;
-  color: $MW_COLOR_NEUTRAL_6;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF482A', endColorstr='#FFC255',GradientType=0 );
+  color: $mw-color-inverted;
 }
 .mw-brand-underline {
   &::after {
@@ -18,11 +21,17 @@ Provides all MSL skin classes: partial styles for HTML elements
     background: linear-gradient(90deg, $MW_COLOR_BRAND_1, $MW_COLOR_BRAND_2);
   }
 }
+.mw-fallback-css .mw-brand-underline::after {
+  background: $MW_COLOR_BRAND_1;
+}
 .mw-accent-underline {
   @extend .mw-brand-underline;
   &::after {
     background: linear-gradient(90deg, $MW_COLOR_ACCENT_1, $MW_COLOR_ACCENT_2);
   }
+}
+.mw-fallback-css .mw-accent-underline::after {
+  background: $MW_COLOR_ACCENT_1;
 }
 .mw-blur {
   filter: blur(5px);

@@ -13,8 +13,6 @@ header {
   left: 0;
   padding: 16px 20px;
   font-size: 0;
-  background: $mw-bg-gradient-1;
-  color: $mw-color-inverted;
   line-height: 1;
   z-index: 9999;
   h1 {
@@ -100,6 +98,18 @@ header {
   }
   &.gradient2 {
     background: $mw-bg-gradient-2;
+  }
+  &.gradient1-v {
+    background: $mw-bg-gradient-1-vertical;
+  }
+  &.gradient2-v {
+    background: $mw-bg-gradient-2-vertical;
+  }
+  &.gradient1-h {
+    background: $mw-bg-gradient-1-horizontal;
+  }
+  &.gradient2-h {
+    background: $mw-bg-gradient-2-horizontal;
   }
   &.text-primary {
     background: $mw-color-text-primary;

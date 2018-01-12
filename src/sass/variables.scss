@@ -20,6 +20,10 @@ $mw-line-height: $MW_DEFAULT_LINE_HEIGHT;
  */
 $mw-bg-gradient-1: linear-gradient(to bottom right, $MW_COLOR_BRAND_1, $MW_COLOR_BRAND_2);
 $mw-bg-gradient-2: linear-gradient(to bottom right, $MW_COLOR_ACCENT_1, $MW_COLOR_ACCENT_2);
+$mw-bg-gradient-1-horizontal: linear-gradient(to right, $MW_COLOR_BRAND_1, $MW_COLOR_BRAND_2);
+$mw-bg-gradient-2-horizontal: linear-gradient(to right, $MW_COLOR_ACCENT_1, $MW_COLOR_ACCENT_2);
+$mw-bg-gradient-1-vertical: linear-gradient(to bottom, $MW_COLOR_BRAND_1, $MW_COLOR_BRAND_2);
+$mw-bg-gradient-2-vertical: linear-gradient(to bottom, $MW_COLOR_ACCENT_1, $MW_COLOR_ACCENT_2);
 
 /*
 * Accents
