@@ -38,6 +38,19 @@ Provides classes for form elements
     }
   }
 }
+.mw-fallback-css .mw-input-underline {
+  &::after {
+    content: " ";
+    display: block;
+    height: 1px;
+    background: $MW_COLOR_BRAND_1;
+  }
+  &.mw-error {
+    &::after {
+      background: $MW_COLOR_ACCENT_1;
+    }
+  }
+}
 .mw-input {
   width: 328px;
   border: 1px solid $MW_COLOR_NEUTRAL_4;

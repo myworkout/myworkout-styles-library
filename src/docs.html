@@ -12,7 +12,7 @@
 
 <body>
 
-    <header>
+    <header class="mw-brand-bg">
         <div class="headings">
             <h1>Myworkout Styles Library</h1>
             <small>docs & demo</small>
@@ -53,6 +53,16 @@ $mw-path-to-node-modules: "relative/path/to/node_modules";
                     client-specific path to <code>node_modules</code> folder, in a form of a path relative to the file where this library is
                     going to be compiled by the client.
                 </p>
+                <h3>Old browsers</h3>
+                <p>
+                    Some features are not supported by some older browsers. To use fallback CSS add <code>.mw-fallback-css</code> on <code>body</code> for old browsers:
+                </p>
+                <ul>
+                    <li>IE9 and lower</li>
+                    <li>Chrome v25.0.0 and lower</li>
+                    <li>Firefox v15.0.0 and lower</li>
+                    <li>Opera v29.0.0 and lower</li>
+                </ul>
             </div>
             <div id="features" class="section">
                 <h2>Features</h2>
@@ -342,7 +352,7 @@ $mw-path-to-node-modules: "relative/path/to/node_modules";
                         <h3>Form elements: Switch</h3>
                         <div class="row">
                             <div class="mw-switch">
-                                <input type="checkbox" id="switch" disabled>
+                                <input type="checkbox" id="switch">
                                 <label for="switch">Switch demo</label>
                             </div>
                             <code>div.mw-switch input[type="checkbox"] + label</code> <sup>*15</sup>
@@ -561,11 +571,15 @@ $mw-path-to-node-modules: "relative/path/to/node_modules";
                                 <code>$mw-color-inverted</code>
                             </div>
                         </div>
+                        <h3>Expressions</h3>
+                        <p>
+                            These are not supported by some old browsers. To use fallback CSS see "Old browsers" section on "Installation page".
+                        </p>
                         <div class="row">
                             <div class="color-box gradient1"></div>
                             &nbsp;&nbsp;
                             <div class="inline-box">
-                                <code>$mw-gradient-brand-1</code> (expression)
+                                <code>$mw-gradient-brand-1</code>
                             </div>
                             <div class="example">
                                 <code>selector { background: $mw-gradient-brand-1; }</code>
@@ -575,10 +589,50 @@ $mw-path-to-node-modules: "relative/path/to/node_modules";
                             <div class="color-box gradient2"></div>
                             &nbsp;&nbsp;
                             <div class="inline-box">
-                                <code>$mw-gradient-brand-2</code> (expression)
+                                <code>$mw-gradient-brand-2</code>
                             </div>
                             <div class="example">
                                 <code>selector { background: $mw-gradient-brand-2; }</code>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="color-box gradient1-h"></div>
+                            &nbsp;&nbsp;
+                            <div class="inline-box">
+                                <code>$mw-gradient-brand-1-horizontal</code>
+                            </div>
+                            <div class="example">
+                                <code>selector { background: $mw-gradient-brand-1-horizontal; }</code>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="color-box gradient2-h"></div>
+                            &nbsp;&nbsp;
+                            <div class="inline-box">
+                                <code>$mw-gradient-brand-2-horizontal</code>
+                            </div>
+                            <div class="example">
+                                <code>selector { background: $mw-gradient-brand-2-horizontal; }</code>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="color-box gradient1-v"></div>
+                            &nbsp;&nbsp;
+                            <div class="inline-box">
+                                <code>$mw-gradient-brand-1-vertical</code>
+                            </div>
+                            <div class="example">
+                                <code>selector { background: $mw-gradient-brand-1-vertical; }</code>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="color-box gradient2-v"></div>
+                            &nbsp;&nbsp;
+                            <div class="inline-box">
+                                <code>$mw-gradient-brand-2-vertical</code>
+                            </div>
+                            <div class="example">
+                                <code>selector { background: $mw-gradient-brand-2-vertical; }</code>
                             </div>
                         </div>
                     </div>
@@ -592,14 +646,25 @@ $mw-path-to-node-modules: "relative/path/to/node_modules";
                         <div class="skin-demo mw-brand-bg">
                             Lorem ipsum dolor sit amet...
                         </div>
-                        <code>.mw-brand-bg</code> provides gradient background and text color.
+                        <code>.mw-brand-bg</code> provides gradient background and text color. <sup>*1</sup>
                     </div>
                     <div class="row">
                         <div class="skin-demo mw-accent-bg">
                             Lorem ipsum dolor sit amet...
                         </div>
-                        <code>.mw-accent-bg</code> provides gradient background and text color.
+                        <code>.mw-accent-bg</code> provides gradient background and text color. <sup>*1</sup>
                     </div>
+                    <blockquote>
+                        <sup>*1</sup> IE 10/11 have problems with this skin. Possible solutions:
+                        <ul>
+                            <li>Do nothing. IE 10/11 will render background in one appropriate color.</li>
+                            <li>If possible, specify height and width in pixels for element that is using this skin. This will make IE 10/11 render background correctly.</li>
+                            <li>
+                                Target IE 10/11 and override <code>background</code> property of the element that is using this skin with <code>$mw-gradient-brand-2-vertical</code>
+                                or <code>$mw-gradient-brand-2-horizontal</code> variable. This will render gradient background with different direction.
+                            </li>
+                        </ul>
+                    </blockquote>
                     <div class="row">
                         <div class="mw-brand-underline">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean facilisis tortor libero, volutpat porttitor eros efficitur et. Duis pulvinar dignissim nibh a sollicitudin.
