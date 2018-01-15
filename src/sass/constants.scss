@@ -1,0 +1,39 @@
+/*
+Provides SASS constants with Myworkout design details.
+These values should not be updated by client apps.
+ */
+
+/*
+  Settings
+ */
+$MW_ROOT_FOLDER: "myworkout-styles-library";
+$MW_FORM_IMAGES_PATH: "src/images/forms";
+
+/*
+  Fonts
+ */
+$MW_BRAND_FONT_FAMILY: 'Muli', sans-serif;
+$MW_DEFAULT_FONT_SIZE: 16px;
+$MW_DEFAULT_FONT_WEIGHT: 300;
+$MW_DEFAULT_LINE_HEIGHT: 1.4;
+
+/*
+  Brand colours
+ */
+/*
+* Colour palette
+ */
+$MW_COLOR_BRAND_1: #0EBBC9;
+$MW_COLOR_BRAND_2: #5E46BD;
+$MW_COLOR_NEUTRAL_1: #293333;
+$MW_COLOR_NEUTRAL_2: #657272;
+$MW_COLOR_NEUTRAL_3: #9FB0B1;
+$MW_COLOR_NEUTRAL_4: #C5CFD0;
+$MW_COLOR_NEUTRAL_5: #F3F5F5;
+$MW_COLOR_NEUTRAL_6: #FFFFFF;
+
+/*
+* Colours for accenting
+ */
+$MW_COLOR_ACCENT_1: #FF482A;
+$MW_COLOR_ACCENT_2: #FFC255;

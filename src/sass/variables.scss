@@ -1,0 +1,47 @@
+/*
+Provides SASS variables with Myworkout design details.
+These values can be updated by client apps when appropriate.
+ */
+
+/*
+  Fonts
+ */
+$mw-font: $MW_BRAND_FONT_FAMILY;
+$mw-font-size: $MW_DEFAULT_FONT_SIZE;
+$mw-font-weight: $MW_DEFAULT_FONT_WEIGHT;
+$mw-line-height: $MW_DEFAULT_LINE_HEIGHT;
+
+/*
+* Colour implementation
+ */
+
+/*
+* Gradient backgrounds
+ */
+$mw-bg-gradient-1: linear-gradient(to bottom right, $MW_COLOR_BRAND_1, $MW_COLOR_BRAND_2);
+$mw-bg-gradient-2: linear-gradient(to bottom right, $MW_COLOR_ACCENT_1, $MW_COLOR_ACCENT_2);
+$mw-bg-gradient-1-horizontal: linear-gradient(to right, $MW_COLOR_BRAND_1, $MW_COLOR_BRAND_2);
+$mw-bg-gradient-2-horizontal: linear-gradient(to right, $MW_COLOR_ACCENT_1, $MW_COLOR_ACCENT_2);
+$mw-bg-gradient-1-vertical: linear-gradient(to bottom, $MW_COLOR_BRAND_1, $MW_COLOR_BRAND_2);
+$mw-bg-gradient-2-vertical: linear-gradient(to bottom, $MW_COLOR_ACCENT_1, $MW_COLOR_ACCENT_2);
+
+/*
+* Accents
+ */
+$mw-color-constructive: $MW_COLOR_BRAND_1;
+$mw-color-destructive: $MW_COLOR_ACCENT_1;
+
+/*
+* Common colour definitions
+ */
+$mw-color-text-primary: $MW_COLOR_NEUTRAL_1;
+$mw-color-text-secondary: $MW_COLOR_NEUTRAL_2;
+$mw-color-background-primary: $MW_COLOR_NEUTRAL_6;
+$mw-color-background-secondary: $MW_COLOR_NEUTRAL_5;
+$mw-color-border-primary: $MW_COLOR_NEUTRAL_4;
+$mw-color-border-secondary: $MW_COLOR_NEUTRAL_3;
+$mw-color-action: $MW_COLOR_BRAND_1;
+$mw-color-error: $MW_COLOR_ACCENT_1;
+$mw-color-warning: $MW_COLOR_ACCENT_2;
+$mw-color-inactive: $MW_COLOR_NEUTRAL_4;
+$mw-color-inverted: $MW_COLOR_NEUTRAL_6;

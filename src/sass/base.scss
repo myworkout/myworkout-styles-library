@@ -1,0 +1,39 @@
+/*
+Provides all MSL base rules
+ */
+
+html {
+  font-family: $mw-font;
+  font-size: $mw-font-size;
+  font-weight: $mw-font-weight;
+  background: $mw-color-background-primary;
+  color: $mw-color-text-primary;
+  line-height: $mw-line-height;
+}
+div {
+  box-sizing: border-box;
+}
+a {
+  color: $mw-color-action;
+  transition: all .3s ease;
+  &:hover {
+    color: darken($mw-color-action, 20);
+  }
+  &:visited,
+  &:active {
+    color: darken($mw-color-action, 20);
+    &:hover {
+      color: $mw-color-action;
+    }
+  }
+  &::selection {
+    color: $MW_COLOR_NEUTRAL_1;
+  }
+}
+strong,
+b {
+  font-weight: 600;
+}
+::selection {
+  background: lighten($MW_COLOR_BRAND_1, 20);
+}

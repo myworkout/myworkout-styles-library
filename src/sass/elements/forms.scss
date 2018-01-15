@@ -1,0 +1,328 @@
+/*
+Provides classes for form elements
+ */
+
+.mw-input-model {
+  box-sizing: border-box;
+  width: 100%;
+  font-family: $mw-font;
+  font-size: 19px;
+  font-weight: $mw-font-weight;
+  line-height: $mw-line-height;
+  height: 44px;
+  background: none;
+  outline: none;
+  &::placeholder {
+    color: $MW_COLOR_NEUTRAL_4;
+  }
+  &:disabled {
+    cursor: auto;
+    opacity: .6;
+  }
+}
+.mw-input-underline {
+  &::after {
+    content: " ";
+    display: block;
+    height: 1px;
+    background: linear-gradient(90deg, $MW_COLOR_BRAND_1, $MW_COLOR_BRAND_2);
+  }
+  &.mw-error {
+    &::after {
+      background: linear-gradient(90deg, $MW_COLOR_ACCENT_1, $MW_COLOR_ACCENT_2);
+    }
+  }
+  &.mw-disabled {
+    &::after {
+      opacity: .3;
+    }
+  }
+}
+.mw-fallback-css .mw-input-underline {
+  &::after {
+    content: " ";
+    display: block;
+    height: 1px;
+    background: $MW_COLOR_BRAND_1;
+  }
+  &.mw-error {
+    &::after {
+      background: $MW_COLOR_ACCENT_1;
+    }
+  }
+}
+.mw-input {
+  width: 328px;
+  border: 1px solid $MW_COLOR_NEUTRAL_4;
+  border-radius: 4px;
+  padding: 0 15px;
+  @extend .mw-input-model;
+  &.mw-error {
+    border: 2px solid $MW_COLOR_ACCENT_1;
+    padding: 0 40px 0 14px;
+    background-image: url(get-form-image("error-star.svg"));
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    content: get-form-image("error-star.svg");
+  }
+  &:focus {
+    padding: 0 14px;
+    border: 2px solid $MW_COLOR_BRAND_1;
+  }
+}
+.mw-special-input-wrap {
+  display: inline-block;
+  width: 100%;
+  max-width: 330px;
+  @extend .mw-input-underline;
+  input {
+    height: 49px;
+    max-width: 100%;
+    border: none;
+    padding: 0 8px;
+    @extend .mw-input-model;
+  }
+  &.mw-error {
+    input {
+      padding: 0 40px 0 7px;
+      background-image: url(get-form-image("error-star.svg"));
+      background-repeat: no-repeat;
+      background-position: right 10px center;
+    }
+  }
+}
+.mw-checkbox-wrap {
+  display: inline-block;
+  input[type="checkbox"] {
+    position: absolute; // take it out of document flow
+    opacity: 0; // hide it
+    & + label {
+      display: inline-block;
+      position: relative;
+      box-sizing: border-box;
+      cursor: pointer;
+      padding: 0 15px 0 0;
+      height: 44px;
+      line-height: 44px;
+      font-size: 19px;
+    }
+    // box
+    & + label:before {
+      content: '';
+      margin: 0 8px;
+      display: inline-block;
+      vertical-align: text-top;
+      width: 20px;
+      height: 20px;
+      border: 1px solid $MW_COLOR_NEUTRAL_4;
+      border-radius: 50%;
+      background: none;
+      transition: all .2s ease-out;
+    }
+    // box hover
+    &:hover + label:before {
+      border: 1px solid $MW_COLOR_NEUTRAL_3;
+    }
+    // box focus
+    &:focus + label:before {
+      // nothing on focus
+    }
+    // box checked
+    &:checked + label:before {
+      background: $MW_COLOR_BRAND_1;
+      border: 1px solid $MW_COLOR_BRAND_1;
+    }
+    // disabled state label
+    &:disabled + label {
+      color: $MW_COLOR_NEUTRAL_4;
+      cursor: auto;
+    }
+    // disabled box.
+    &:disabled + label:before {
+      background: $MW_COLOR_NEUTRAL_5;
+    }
+    // checkmark
+    &:checked + label:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url(get-form-image("check-white.svg"));
+      background-repeat: no-repeat;
+      background-position: 12px 16px;
+      transition: all .2s ease-out;
+    }
+  }
+}
+.mw-special-checkbox-fluid-wrap {
+  @extend .mw-checkbox-wrap;
+  @extend .mw-input-underline;
+  input[type="checkbox"] {
+    & + label {
+      height: 50px;
+      line-height: 50px;
+    }
+    &:checked + label:after {
+      background-position: 12px 19px;
+    }
+  }
+}
+.mw-special-checkbox-wrap {
+  @extend .mw-checkbox-wrap;
+  @extend .mw-input-underline;
+  input[type="checkbox"] {
+    & + label {
+      width: 330px;
+      height: 50px;
+      line-height: 50px;
+    }
+    &:checked + label:after {
+      background-position: 12px 19px;
+    }
+  }
+  &.mw-full-width {
+    input[type="checkbox"] {
+      & + label {
+        width: 100%;
+      }
+    }
+  }
+}
+.mw-negative-checkbox-wrap {
+  @extend .mw-checkbox-wrap;
+  input[type="checkbox"] {
+    & + label {
+      color: $MW_COLOR_NEUTRAL_5;
+    }
+    &:checked + label:before {
+      background: $MW_COLOR_NEUTRAL_5;
+      border: 1px solid $MW_COLOR_NEUTRAL_5;
+    }
+    &:hover + label:before {
+      border: 1px solid $MW_COLOR_NEUTRAL_6;
+    }
+    &:checked + label:after {
+      background-image: url(get-form-image("check-negative.svg"));
+      background-repeat: no-repeat;
+      background-position: 12px 16px;
+    }
+    &:disabled + label:before {
+      background: $MW_COLOR_NEUTRAL_3;
+    }
+  }
+}
+.mw-select-wrap {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 50px 0 0;
+  margin: 0;
+  border: 1px solid $MW_COLOR_NEUTRAL_2;
+  border-radius: 3px;
+  overflow: hidden;
+  background-color: $MW_COLOR_NEUTRAL_2;
+  background-image: url(get-form-image("down-arrow-white.svg"));
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  width: 328px;
+  select {
+    font-family: $mw-font;
+    font-size: 19px;
+    font-weight: $mw-font-weight;
+    padding: 0 20px;
+    width: calc(100% + 50px); // pixels to add on 100% gotta be same as right padding of .mw-select-wrap
+    height: 44px;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    appearance: none;
+    color: $MW_COLOR_NEUTRAL_6;
+    cursor: pointer;
+    &:focus {
+      outline: none;
+    }
+    &:disabled {
+      cursor: auto;
+    }
+  }
+  &.mw-error {
+    border: 2px solid $MW_COLOR_ACCENT_1;
+  }
+  &.mw-disabled {
+    background-color: $MW_COLOR_NEUTRAL_4;
+    border-color: $MW_COLOR_NEUTRAL_4;
+  }
+}
+.mw-select-fluid-wrap {
+  @extend .mw-select-wrap;
+  width: auto;
+  padding: 0 70px 0 0;
+  select {
+    width: calc(100% + 70px); // pixels to add on 100% gotta be same as right padding of .mw-select-fluid-wrap
+  }
+}
+.mw-switch {
+  padding: 10px 0;
+  input[type="checkbox"] {
+    &:not(:checked),
+    &:checked {
+      position: absolute;
+      left: -9999px;
+    }
+    &:not(:checked) + label,
+    &:checked + label {
+      position: relative;
+      font-family: $mw-font;
+      font-weight: $mw-font-weight;
+      font-size: 19px;
+      padding-left: 85px;
+      padding-top: 10px;
+      cursor: pointer;
+    }
+    &:not(:checked) + label:before,
+    &:checked + label:before,
+    &:not(:checked) + label:after,
+    &:checked + label:after {
+      content: '';
+      position: absolute;
+      height: 36px;
+      transition: all .3s ease;
+    }
+    &:not(:checked) + label:before,
+    &:checked + label:before {
+      left: 0;
+      top: 0;
+      width: 65px;
+      border: 4px solid $MW_COLOR_NEUTRAL_4;
+      background: $MW_COLOR_NEUTRAL_4;
+      border-radius: 22px;
+      z-index: -1;
+    }
+    &:not(:checked) + label:after,
+    &:checked + label:after {
+      left: 4px;
+      top: 4px;
+      background-color: $MW_COLOR_NEUTRAL_6;
+      border-radius: 50%;
+      width: 36px;
+    }
+    &:checked + label:after {
+      left: 32px;
+    }
+    &:checked + label:before {
+      background-color: $MW_COLOR_BRAND_1;
+      border-color: $MW_COLOR_BRAND_1;
+    }
+    &:disabled + label {
+      opacity: .5;
+      cursor: auto;
+    }
+  }
+}
+.mw-label {
+  color: $mw-color-text-primary;
+  font-size: 16px;
+  padding: 2px 0 4px 0;
+}

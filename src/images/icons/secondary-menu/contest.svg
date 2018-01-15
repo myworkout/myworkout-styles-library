@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Contest icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Contest-icon" stroke="#0EBBC9">
+            <g id="Leaderboard-icon" transform="translate(-0.500000, -0.500000)">
+                <polygon id="Stroke-1" stroke-width="1.06944444" stroke-linejoin="round" points="20.5 15.8042463 18.3370027 17 18.7500751 14.4672954 17 12.6737438 19.4185014 12.3041673 20.5 10 21.5814986 12.3041673 24 12.6737438 22.2499249 14.4672954 22.6629973 17"></polygon>
+                <polygon id="Stroke-3" stroke-width="1.06944444" stroke-linejoin="round" points="12.5 5.80424629 10.3368525 7 10.7500751 4.46729541 9 2.67374382 11.4185014 2.30416732 12.5 0 13.5814986 2.30416732 16 2.67374382 14.2499249 4.46729541 14.6631475 7"></polygon>
+                <polygon id="Stroke-4" stroke-width="1.06944444" stroke-linejoin="round" points="3.5 10.8042463 1.3368525 12 1.7500751 9.46729541 0 7.67374382 2.41850135 7.30416732 3.5 5 4.58149865 7.30416732 7 7.67374382 5.2499249 9.46729541 5.6631475 12"></polygon>
+                <path d="M12.5,9.86956522 L12.5,24" id="Line-6" stroke-linecap="square"></path>
+                <path d="M20.5,20.7391304 L20.5,24" id="Line-7" stroke-linecap="square"></path>
+                <path d="M3.5,15.3043478 L3.5,24" id="Line-8" stroke-linecap="square"></path>
+            </g>
+        </g>
+    </g>
+</svg>

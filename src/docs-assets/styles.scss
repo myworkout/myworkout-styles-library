@@ -1,0 +1,213 @@
+/*
+  Styles for docs.html page
+*/
+
+$mw-path-to-node-modules: "this/will/be/overriden";
+@import "../all";
+
+/* Layout rules */
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 16px 20px;
+  font-size: 0;
+  line-height: 1;
+  z-index: 9999;
+  h1 {
+    font-size: 24px;
+  }
+  .headings,
+  .navigation {
+    display: inline-block;
+    width: 50%;
+    font-size: $mw-font-size;
+    vertical-align: middle;
+  }
+  .navigation {
+    text-align: right;
+    a {
+      color: $mw-color-inverted;
+      text-decoration: none;
+      margin-left: 10px;
+    }
+  }
+  h1 {
+    margin: 0;
+  }
+}
+.main-wrap {
+  margin-top: 90px;
+  .wrap {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .section,
+  .subsection {
+    display: none;
+    &.visible {
+      display: block;
+    }
+  }
+  .section {
+    @extend .mw-article;
+  }
+}
+
+/* Module rules */
+.color-box {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  border: 1px solid $MW_COLOR_NEUTRAL_1;
+  &.brand1 {
+    background: $MW_COLOR_BRAND_1;
+  }
+  &.brand2 {
+    background: $MW_COLOR_BRAND_2;
+  }
+  &.neutral1 {
+    background: $MW_COLOR_NEUTRAL_1;
+  }
+  &.neutral2 {
+    background: $MW_COLOR_NEUTRAL_2;
+  }
+  &.neutral3 {
+    background: $MW_COLOR_NEUTRAL_3;
+  }
+  &.neutral4 {
+    background: $MW_COLOR_NEUTRAL_4;
+  }
+  &.neutral5 {
+    background: $MW_COLOR_NEUTRAL_5;
+  }
+  &.neutral6 {
+    background: $MW_COLOR_NEUTRAL_6;
+  }
+  &.accent1 {
+    background: $MW_COLOR_ACCENT_1;
+  }
+  &.accent2 {
+    background: $MW_COLOR_ACCENT_2;
+  }
+  &.gradient1 {
+    background: $mw-bg-gradient-1;
+  }
+  &.gradient2 {
+    background: $mw-bg-gradient-2;
+  }
+  &.gradient1-v {
+    background: $mw-bg-gradient-1-vertical;
+  }
+  &.gradient2-v {
+    background: $mw-bg-gradient-2-vertical;
+  }
+  &.gradient1-h {
+    background: $mw-bg-gradient-1-horizontal;
+  }
+  &.gradient2-h {
+    background: $mw-bg-gradient-2-horizontal;
+  }
+  &.text-primary {
+    background: $mw-color-text-primary;
+  }
+  &.text-secondary {
+    background: $mw-color-text-secondary;
+  }
+  &.bg-primary {
+    background: $mw-color-background-primary;
+  }
+  &.bg-secondary {
+    background: $mw-color-background-secondary;
+  }
+  &.border-primary {
+    background: $mw-color-border-primary;
+  }
+  &.border-secondary {
+    background: $mw-color-border-secondary;
+  }
+  &.action {
+    background: $mw-color-action;
+  }
+  &.error {
+    background: $mw-color-error;
+  }
+  &.warning {
+    background: $mw-color-warning;
+  }
+  &.inactive {
+    background: $mw-color-inactive;
+  }
+  &.inverted {
+    background: $mw-color-inverted;
+  }
+}
+.inline-box {
+  display: inline-block;
+  vertical-align: middle;
+}
+.row {
+  display: block;
+  padding: 10px 0;
+}
+.description {
+  margin: 5px 0;
+}
+.example {
+  background: $mw-color-background-secondary;
+  padding: 20px;
+  margin: 5px 0;
+}
+.underline {
+  border-bottom: 1px solid $mw-color-border-primary;
+}
+.demo {
+  padding: 20px;
+  border: 1px solid $mw-color-border-primary;
+  margin-bottom: 20px;
+}
+#typo .demo {
+  a {
+    &.force-default {
+      color: $mw-color-action;
+      &:hover {
+        color: darken($mw-color-action, 20);
+      }
+    }
+    &.force-visited {
+      color: darken($mw-color-action, 20);
+      &:hover {
+        color: $mw-color-action;
+      }
+    }
+  }
+}
+code,
+pre {
+  background: $mw-color-background-secondary;
+}
+.negative-bg {
+  display: inline-block;
+  padding-left: 10px;
+  background: $MW_COLOR_NEUTRAL_2;
+}
+.skin-demo {
+  height: 100px;
+  padding: 20px;
+}
+.mw-input.mw-error,
+.mw-special-input-wrap.mw-error input {
+  background-image: url("../images/forms/error-star.svg");
+}
+.mw-checkbox-wrap input[type="checkbox"]:checked + label:after {
+  background-image: url("../images/forms/check-white.svg");
+}
+.mw-negative-checkbox-wrap input[type="checkbox"]:checked + label:after {
+  background-image: url("../images/forms/check-negative.svg");
+}
+.mw-select-wrap {
+  background-image: url("../images/forms/down-arrow-white.svg");
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="70px" height="70px" viewBox="0 0 70 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Page icon myworkout</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#0EBBC9" offset="0%"></stop>
+            <stop stop-color="#5E46BD" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-2" cx="35" cy="35" r="35"></circle>
+        <linearGradient x1="61.8321668%" y1="67.8652849%" x2="25.2561404%" y2="27.4554685%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#B3B3B3" offset="100%"></stop>
+        </linearGradient>
+        <radialGradient cx="45.7391194%" cy="87.0282919%" fx="45.7391194%" fy="87.0282919%" r="71.7300046%" gradientTransform="translate(0.457391,0.870283),scale(0.856696,1.000000),translate(-0.457391,-0.870283)" id="radialGradient-5">
+            <stop stop-color="#E6E6E6" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Page-icon-myworkout">
+            <g id="Profile-picture-placeholder">
+                <mask id="mask-3" fill="white">
+                    <use xlink:href="#path-2"></use>
+                </mask>
+                <use id="Oval" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+            </g>
+            <g id="Vignette" transform="translate(16.000000, 19.000000)" fill-rule="nonzero">
+                <path d="M17.9142184,3.02394098 C15.9387777,1.0376448 13.2691871,5.97328157e-06 10.4883636,5.97328157e-06 C6.24973254,-0.00454745316 2.42599478,2.59455684 0.800917968,6.58484081 C-0.824158839,10.5751248 0.0696266563,15.1703522 3.06532494,18.2268567 L3.12164541,18.2799586 L6.73882797,14.5484773 C4.64274384,12.4365124 4.6232018,8.99242163 6.6951796,6.85588519 C8.76715741,4.71934875 12.1460392,4.69942957 14.2421234,6.81139445 L16.1415314,8.72162582 L19.8136264,4.93273716 L17.9142184,3.02394098 Z" id="Shape" fill="url(#linearGradient-4)"></path>
+                <path d="M35.9195084,8.22594997 L18.1948531,26.3675693 L6.92771167,14.8372219 C6.86375261,14.7717113 6.80120441,14.704274 6.74006707,14.6349098 C3.83280916,11.3730207 3.98873657,6.33348711 7.09180922,3.26669454 C10.1948819,0.199901973 15.1174904,0.220276235 18.1962639,3.31265495 C15.5408196,0.493952923 11.60713,-0.637866696 7.90710081,0.352208658 C4.20707158,1.34228401 1.31650833,4.30017692 0.346393163,8.08902724 C-0.623722,11.8778776 0.477582106,15.9080572 3.22702148,18.6305747 L18.1962639,33.9484945 L39.6272529,12.0178577 L35.9195084,8.22594997 Z" id="Shape" fill="url(#radialGradient-5)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

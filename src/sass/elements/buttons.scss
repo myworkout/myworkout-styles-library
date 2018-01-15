@@ -1,0 +1,13 @@
+/*
+Provides classes for buttons
+ */
+
+.mw-button {
+  @include mw-button($MW_COLOR_BRAND_1, $MW_COLOR_NEUTRAL_6);
+}
+.mw-button-negative {
+  @include mw-button($MW_COLOR_BRAND_1, $MW_COLOR_BRAND_1, negative);
+}
+.mw-button-simple {
+  @include mw-button($MW_COLOR_NEUTRAL_5, $MW_COLOR_BRAND_1, simple);
+}
