@@ -29,8 +29,11 @@ Provides classes for typography (typography for HTML elements defined in src/sas
 .mw-p {
   @extend .mw-text;
   font-size: $mw-font-size;
+  margin: 20px 0;
 }
 .mw-quote {
+  line-height: $mw-line-height;
+  color: $MW_COLOR_NEUTRAL_2;
   margin: 20px 0;
   padding: 20px 20px 20px 40px;
   border-left: 4px solid $mw-color-border-primary;

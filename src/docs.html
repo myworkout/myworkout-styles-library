@@ -28,41 +28,43 @@
     <div class="main-wrap">
         <div class="wrap">
             <div id="installation" class="section visible">
-                <h2>Installation</h2>
-                <p>
-                    To add Myworkout Styles Library to a project use Node.js:
-                </p>
-                <code>npm install git+ssh://git@bitbucket.org/myworkout/myworkout-styles-library.git --save</code>
-                <p>
-                    Library delivers SASS, so it expects to be compiled by client application. However, it also provides common assets (images) and
-                    it should be available in production too (hence <code>--save</code>).
-                </p>
-                <h3>Setup</h3>
-                <p>
-                    Top level SASS file of client application should import Myworkout Styles Library like this:
-                </p>
-                <pre>@import "path/to/node_modules/normalize.css/normalize.css";
+                <div class="mw-article">
+                    <h2>Installation</h2>
+                    <p>
+                        To add Myworkout Styles Library to a project use Node.js:
+                    </p>
+                    <code>npm install git+ssh://git@bitbucket.org/myworkout/myworkout-styles-library.git --save</code>
+                    <p>
+                        Library delivers SASS, so it expects to be compiled by client application. However, it also provides common assets (images) and
+                        it should be available in production too (hence <code>--save</code>).
+                    </p>
+                    <h3>Setup</h3>
+                    <p>
+                        Top level SASS file of client application should import Myworkout Styles Library like this:
+                    </p>
+                    <pre>@import "path/to/node_modules/normalize.css/normalize.css";
 $mw-path-to-node-modules: "relative/path/to/node_modules";
 @import "path/to/node_modules/myworkout-styles-library/src/all";</pre>
-                <p>
-                    It is recommended to use <code>normalize.css</code> together with this library. In a case of using 3rd party frameworks like Zurb Foundation
-                    or Bootstrap, this is not needed since they already import it.
-                </p>
-                <p>
-                    Library requires <code>$mw-path-to-node-modules</code> SASS variable to be set before importing the library itself. It should provide
-                    client-specific path to <code>node_modules</code> folder, in a form of a path relative to the file where this library is
-                    going to be compiled by the client.
-                </p>
-                <h3>Old browsers</h3>
-                <p>
-                    Some features are not supported by some older browsers. To use fallback CSS add <code>.mw-fallback-css</code> on <code>body</code> for old browsers:
-                </p>
-                <ul>
-                    <li>IE9 and lower</li>
-                    <li>Chrome v25.0.0 and lower</li>
-                    <li>Firefox v15.0.0 and lower</li>
-                    <li>Opera v29.0.0 and lower</li>
-                </ul>
+                    <p>
+                        It is recommended to use <code>normalize.css</code> together with this library. In a case of using 3rd party frameworks like Zurb Foundation
+                        or Bootstrap, this is not needed since they already import it.
+                    </p>
+                    <p>
+                        Library requires <code>$mw-path-to-node-modules</code> SASS variable to be set before importing the library itself. It should provide
+                        client-specific path to <code>node_modules</code> folder, in a form of a path relative to the file where this library is
+                        going to be compiled by the client.
+                    </p>
+                    <h3>Old browsers</h3>
+                    <p>
+                        Some features are not supported by some older browsers. To use fallback CSS add <code>.mw-fallback-css</code> on <code>body</code> for old browsers:
+                    </p>
+                    <ul>
+                        <li>IE9 and lower</li>
+                        <li>Chrome v25.0.0 and lower</li>
+                        <li>Firefox v15.0.0 and lower</li>
+                        <li>Opera v29.0.0 and lower</li>
+                    </ul>
+                </div>
             </div>
             <div id="features" class="section">
                 <h2>Features</h2>
