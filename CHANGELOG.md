@@ -1,3 +1,8 @@
+## 1.1.0 (2018-01-19)
+
+- MYGO-1717 Fix issues when used with Zurb Foundation
+- MYGO-1716 Add copyright notice and change license
+
 ## 1.0.0 (2018-01-15)
 
 - MYGO-1615  Add guidelines
