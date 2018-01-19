@@ -1,5 +1,7 @@
 #Myworkout Styles Library
 
+**Copyright notice**: Do not use without prior consent from Myworkout AS.
+
 ``npm run build`` will install dependencies and build files for distribution
 
 ``npm run dist`` or ``gulp`` will just build files for distribution if node_modules/ is already installed

@@ -3,15 +3,19 @@ Provides classes for form elements
  */
 
 .mw-input-model {
+  display: inline-block;
   box-sizing: border-box;
   width: 100%;
   font-family: $mw-font;
   font-size: 19px;
   font-weight: $mw-font-weight;
   line-height: $mw-line-height;
+  color: $mw-color-text-primary;
   height: 44px;
   background: none;
   outline: none;
+  box-shadow: none;
+  margin: 0;
   &::placeholder {
     color: $MW_COLOR_NEUTRAL_4;
   }
@@ -57,17 +61,18 @@ Provides classes for form elements
   border-radius: 4px;
   padding: 0 15px;
   @extend .mw-input-model;
+  &:focus {
+    padding: 0 14px;
+    border: 2px solid $MW_COLOR_BRAND_1;
+    box-shadow: none;
+    background: none;
+  }
   &.mw-error {
     border: 2px solid $MW_COLOR_ACCENT_1;
     padding: 0 40px 0 14px;
     background-image: url(get-form-image("error-star.svg"));
     background-repeat: no-repeat;
     background-position: right 10px center;
-    content: get-form-image("error-star.svg");
-  }
-  &:focus {
-    padding: 0 14px;
-    border: 2px solid $MW_COLOR_BRAND_1;
   }
 }
 .mw-special-input-wrap {
@@ -81,6 +86,11 @@ Provides classes for form elements
     border: none;
     padding: 0 8px;
     @extend .mw-input-model;
+    &:focus {
+      border: none;
+      box-shadow: none;
+      background: none;
+    }
   }
   &.mw-error {
     input {
@@ -105,9 +115,11 @@ Provides classes for form elements
       height: 44px;
       line-height: 44px;
       font-size: 19px;
+      margin: 0;
     }
     // box
     & + label:before {
+      box-sizing: content-box;
       content: '';
       margin: 0 8px;
       display: inline-block;
@@ -143,6 +155,7 @@ Provides classes for form elements
     }
     // checkmark
     &:checked + label:after {
+      box-sizing: content-box;
       content: '';
       position: absolute;
       left: 0;
@@ -280,6 +293,9 @@ Provides classes for form elements
       padding-left: 85px;
       padding-top: 10px;
       cursor: pointer;
+      margin: 0;
+      line-height: $mw-line-height;
+      color: $mw-color-text-primary;
     }
     &:not(:checked) + label:before,
     &:checked + label:before,
@@ -289,6 +305,7 @@ Provides classes for form elements
       position: absolute;
       height: 36px;
       transition: all .3s ease;
+      box-sizing: content-box;
     }
     &:not(:checked) + label:before,
     &:checked + label:before {
@@ -322,7 +339,9 @@ Provides classes for form elements
   }
 }
 .mw-label {
+  display: inline-block;
   color: $mw-color-text-primary;
   font-size: 16px;
   padding: 2px 0 4px 0;
+  line-height: $mw-line-height;
 }

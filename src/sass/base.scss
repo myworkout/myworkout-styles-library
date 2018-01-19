@@ -2,7 +2,7 @@
 Provides all MSL base rules
  */
 
-html {
+body {
   font-family: $mw-font;
   font-size: $mw-font-size;
   font-weight: $mw-font-weight;
@@ -20,7 +20,8 @@ a {
     color: darken($mw-color-action, 20);
   }
   &:visited,
-  &:active {
+  &:active,
+  &:focus {
     color: darken($mw-color-action, 20);
     &:hover {
       color: $mw-color-action;
