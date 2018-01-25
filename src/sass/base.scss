@@ -9,6 +9,8 @@ body {
   background: $mw-color-background-primary;
   color: $mw-color-text-primary;
   line-height: $mw-line-height;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 div {
   box-sizing: border-box;
