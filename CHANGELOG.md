@@ -1,3 +1,7 @@
+## 1.2.0 (2018-01-25)
+
+- MYGO-1749  Add symbols
+
 ## 1.1.0 (2018-01-19)
 
 - MYGO-1717 Fix issues when used with Zurb Foundation
