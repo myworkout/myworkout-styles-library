@@ -1,0 +1,23 @@
+<svg width="21px" height="24px" viewBox="0 0 21 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Team" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="Leaderboard" transform="translate(-543.000000, -198.000000)" stroke="#0EBBC9">
+            <g transform="translate(439.000000, 70.000000)" id="Stacked-Group">
+                <g transform="translate(0.000000, 110.000000)">
+                    <g id="1st-place">
+                        <g id="Stacked-Group" transform="translate(8.000000, 8.000000)">
+                            <g id="Change" transform="translate(97.000000, 10.000000)">
+                                <g id="Arrow" transform="translate(0.000000, 1.000000)">
+                                    <path d="M9.5,0 L9.5,22" id="Line-4"></path>
+                                    <polyline id="Line-5" points="19 10.2666667 9.5 0 0 10.2666667"></polyline>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
