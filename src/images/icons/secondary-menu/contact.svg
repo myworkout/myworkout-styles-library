@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
-    <title>Contact icon</title>
+    <title>Secondary menu/Icons/Contact</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Contact-icon" stroke="#0EBBC9">
-            <g id="Feedback-icon-Copy" transform="translate(0.000000, 1.000000)">
+        <g id="Secondary-menu/Icons/Contact" stroke="#0EBBC9">
+            <g id="Feedback-icon-Copy" transform="translate(1.000000, 2.000000)">
                 <path d="M19.9972222,15.1540365 L21.7222222,21 L15.0138889,17.7522425 C13.8648932,18.0449928 12.6845209,18.1911834 11.5,18.187442 C5.14944444,18.187442 0,14.1212496 0,9.093721 C0,4.06619239 5.14944444,0 11.5,0 C17.8505556,0 23,4.07268791 23,9.093721 C22.9231627,11.4641709 21.82507,13.6803817 19.9972222,15.1540365 Z" id="Shape"></path>
             </g>
         </g>
