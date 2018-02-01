@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
-    <title>Videos icon</title>
+    <title>Secondary menu/Icons/Videos</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Videos-icon" fill-rule="nonzero" stroke="#0EBBC9">
-            <g id="Video-icon">
+        <g id="Secondary-menu/Icons/Videos" fill-rule="nonzero" stroke="#0EBBC9">
+            <g id="Video-icon" transform="translate(1.000000, 1.000000)">
                 <path d="M11.5,0 C5.14872538,2.68790838e-16 5.37581675e-16,5.14872538 0,11.5 C-5.37581675e-16,17.8512746 5.14872538,23 11.5,23 C17.8512746,23 23,17.8512746 23,11.5 C23,5.14872538 17.8512746,8.06372513e-16 11.5,0 Z" id="Shape"></path>
                 <polygon id="Shape" points="9.68421053 8.23157895 9.68421053 14.7684211 15.1315789 11.5"></polygon>
             </g>
