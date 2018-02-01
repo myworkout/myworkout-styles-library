@@ -1,3 +1,7 @@
+## 1.3.0 (2018-02-01)
+
+- MYGO-1789  Update icons for secondary menu to add paddings
+
 ## 1.2.0 (2018-01-25)
 
 - MYGO-1749  Add symbols
