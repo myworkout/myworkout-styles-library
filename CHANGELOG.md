@@ -1,3 +1,7 @@
+## 1.4.0 (2018-02-08)
+
+- Replace src/images/symbols svg's with updated versions
+
 ## 1.3.0 (2018-02-01)
 
 - MYGO-1789  Update icons for secondary menu to add paddings
