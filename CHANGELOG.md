@@ -1,3 +1,7 @@
+## 1.5.0 (2018-02-15)
+
+- Add organization icon
+
 ## 1.4.0 (2018-02-08)
 
 - Replace src/images/symbols svg's with updated versions
