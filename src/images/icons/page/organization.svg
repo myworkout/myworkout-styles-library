@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="70px" height="70px" viewBox="0 0 70 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Page icon/Organization/Placeholder</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="35" cy="35" r="35"></circle>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Page-icon/Organization/Placeholder">
+            <g id="Profile-picture-placeholder">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Oval" fill="#F3F5F5" xlink:href="#path-1"></use>
+            </g>
+            <g id="Organization-icon" transform="translate(15.000000, 18.000000)">
+                <path d="M27,6 L27,3 C27,1.35085714 25.425,0 23.5,0 L16.5,0 C14.575,0 13,1.35085714 13,3 L13,6" id="Stroke-5" stroke="#9FB0B1" stroke-width="2.35294118"></path>
+                <path d="M36.3636364,34 L3.63636364,34 C1.63636364,34 0,32.36875 0,30.375 L0,8.625 C0,6.63125 1.63636364,5 3.63636364,5 L36.3636364,5 C38.3636364,5 40,6.63125 40,8.625 L40,30.375 C40,32.36875 38.3636364,34 36.3636364,34 Z" id="Stroke-1" fill="#9FB0B1"></path>
+            </g>
+        </g>
+    </g>
+</svg>
