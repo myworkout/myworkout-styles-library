@@ -1,3 +1,7 @@
+## 1.6.0 (2018-02-16)
+
+- Add secondary menu icons for user and team
+
 ## 1.5.0 (2018-02-15)
 
 - Add organization icon
