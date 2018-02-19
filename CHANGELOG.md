@@ -1,3 +1,7 @@
+## 1.7.0 (2018-02-19)
+
+- Add left/right arrows
+
 ## 1.6.0 (2018-02-16)
 
 - Add secondary menu icons for user and team
