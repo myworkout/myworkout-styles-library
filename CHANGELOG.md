@@ -1,3 +1,7 @@
+## 1.8.0 (2018-02-23)
+
+- Add red remove symbol
+
 ## 1.7.0 (2018-02-19)
 
 - Add left/right arrows
