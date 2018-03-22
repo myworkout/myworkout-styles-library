@@ -1,3 +1,7 @@
+## 1.9.0 (2018-03-22)
+
+- Add logout secondary menu icon
+
 ## 1.8.0 (2018-02-23)
 
 - Add red remove symbol
