@@ -259,6 +259,9 @@ Provides classes for form elements
     &:disabled {
       cursor: auto;
     }
+    option {
+      color: $MW_COLOR_NEUTRAL_1;
+    }
   }
   &.mw-error {
     border: 2px solid $MW_COLOR_ACCENT_1;

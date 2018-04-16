@@ -1,3 +1,7 @@
+## 1.9.1 (2018-04-16)
+
+- Specify color for select > option to fix bug on Windows
+
 ## 1.9.0 (2018-03-22)
 
 - Add logout secondary menu icon
