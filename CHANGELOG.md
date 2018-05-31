@@ -1,3 +1,7 @@
+## 1.10.0 (2018-05-31)
+
+- Add page icon for contests
+
 ## 1.9.1 (2018-04-16)
 
 - Specify color for select > option to fix bug on Windows
