@@ -23,7 +23,7 @@ gulp.task('watch', function() {
 gulp.task('docs-scripts', function() {
     return gulp.src([
         './node_modules/jquery/dist/jquery.js',
-        './node_modules/browser-detect/dist/browser-detect.min.js',
+        './node_modules/browser-detect/dist/browser-detect.umd.js',
         './src/docs-assets/scripts.js'
     ])
         .pipe($.concat('docs.js'))

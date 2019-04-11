@@ -4,7 +4,7 @@ Scripts for docs.html page
 
 jQuery(document).ready(function($) {
 
-    var browserData = browser();
+    var browserData = browserDetect();
     var fallBackCss = false;
     var browserVersion;
     if (browserData.name === 'chrome') {
