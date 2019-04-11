@@ -2,7 +2,7 @@
   Styles for docs.html page
 */
 
-$mw-path-to-node-modules: "this/will/be/overriden";
+$mw-path-to-node-modules: "../../../";
 @import "../all";
 
 /* Layout rules */
