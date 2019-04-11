@@ -1,3 +1,7 @@
+## 1.11.0 (2019-04-11)
+
+- Add checkbox style for radio buttons
+
 ## 1.10.0 (2018-05-31)
 
 - Add page icon for contests
