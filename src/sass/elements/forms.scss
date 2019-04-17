@@ -17,7 +17,7 @@ Provides classes for form elements
   box-shadow: none;
   margin: 0;
   &::placeholder {
-    color: $MW_COLOR_NEUTRAL_4;
+    color: $mw-color-inactive;
   }
   &:disabled {
     cursor: auto;
@@ -29,11 +29,11 @@ Provides classes for form elements
     content: " ";
     display: block;
     height: 1px;
-    background: linear-gradient(90deg, $MW_COLOR_BRAND_1, $MW_COLOR_BRAND_2);
+    background: $mw-bg-gradient-1-horizontal;
   }
   &.mw-error {
     &::after {
-      background: linear-gradient(90deg, $MW_COLOR_ACCENT_1, $MW_COLOR_ACCENT_2);
+      background: $mw-bg-gradient-2-horizontal;
     }
   }
   &.mw-disabled {
@@ -47,28 +47,28 @@ Provides classes for form elements
     content: " ";
     display: block;
     height: 1px;
-    background: $MW_COLOR_BRAND_1;
+    background: $mw-color-action;
   }
   &.mw-error {
     &::after {
-      background: $MW_COLOR_ACCENT_1;
+      background: $mw-color-error;
     }
   }
 }
 .mw-input {
   width: 328px;
-  border: 1px solid $MW_COLOR_NEUTRAL_4;
+  border: 1px solid $mw-color-border-primary;
   border-radius: 4px;
   padding: 0 15px;
   @extend .mw-input-model;
   &:focus {
     padding: 0 14px;
-    border: 2px solid $MW_COLOR_BRAND_1;
+    border: 2px solid $mw-color-action;
     box-shadow: none;
     background: none;
   }
   &.mw-error {
-    border: 2px solid $MW_COLOR_ACCENT_1;
+    border: 2px solid $mw-color-error;
     padding: 0 40px 0 14px;
     background-image: url(get-form-image("error-star.svg"));
     background-repeat: no-repeat;
@@ -90,14 +90,6 @@ Provides classes for form elements
       border: none;
       box-shadow: none;
       background: none;
-    }
-  }
-  &.mw-error {
-    input {
-      padding: 0 40px 0 7px;
-      background-image: url(get-form-image("error-star.svg"));
-      background-repeat: no-repeat;
-      background-position: right 10px center;
     }
   }
 }
@@ -126,7 +118,7 @@ Provides classes for form elements
       vertical-align: text-top;
       width: 20px;
       height: 20px;
-      border: 1px solid $MW_COLOR_NEUTRAL_4;
+      border: 1px solid $mw-color-border-primary;
       border-radius: 50%;
       background-color: transparent;
       background-repeat: no-repeat;
@@ -135,7 +127,7 @@ Provides classes for form elements
     }
     // box hover
     &:hover + label:before {
-      border: 1px solid $MW_COLOR_NEUTRAL_3;
+      border: 1px solid $mw-color-border-secondary;
     }
     // box focus
     &:focus + label:before {
@@ -143,19 +135,19 @@ Provides classes for form elements
     }
     // box checked
     &:checked + label:before {
-      border: 1px solid $MW_COLOR_BRAND_1;
-      background-color: $MW_COLOR_BRAND_1;
+      border: 1px solid $mw-color-action;
+      background-color: $mw-color-action;
       background-image: url(get-form-image("check-white.svg"));
 
     }
     // disabled state label
     &:disabled + label {
-      color: $MW_COLOR_NEUTRAL_4;
+      color: $mw-color-inactive;
       cursor: auto;
     }
     // disabled box.
     &:disabled + label:before {
-      background: $MW_COLOR_NEUTRAL_5;
+      background: $mw-color-background-secondary;
     }
   }
 }
@@ -191,12 +183,12 @@ Provides classes for form elements
   @extend .mw-checkbox-wrap;
   input[type="checkbox"], input[type="radio"] {
     & + label {
-      color: $MW_COLOR_NEUTRAL_5;
+      color: $mw-color-inverted;
     }
     &:checked + label:before {
-      background-color: $MW_COLOR_NEUTRAL_5;
+      background-color: $MW_COLOR_NEUTRAL_6;
       background-image: url(get-form-image("check-negative.svg"));
-      border: 1px solid $MW_COLOR_NEUTRAL_5;
+      border: 1px solid $MW_COLOR_NEUTRAL_6;
     }
     &:hover + label:before {
       border: 1px solid $MW_COLOR_NEUTRAL_6;
@@ -231,7 +223,7 @@ Provides classes for form elements
     background-color: transparent;
     background-image: none;
     appearance: none;
-    color: $MW_COLOR_NEUTRAL_6;
+    color: $mw-color-inverted;
     cursor: pointer;
     &:focus {
       outline: none;
@@ -240,11 +232,11 @@ Provides classes for form elements
       cursor: auto;
     }
     option {
-      color: $MW_COLOR_NEUTRAL_1;
+      color: $mw-color-text-primary;
     }
   }
   &.mw-error {
-    border: 2px solid $MW_COLOR_ACCENT_1;
+    border: 2px solid $mw-color-error;
   }
   &.mw-disabled {
     background-color: $MW_COLOR_NEUTRAL_4;
