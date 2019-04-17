@@ -198,16 +198,3 @@ pre {
   height: 100px;
   padding: 20px;
 }
-.mw-input.mw-error,
-.mw-special-input-wrap.mw-error input {
-  background-image: url("../images/forms/error-star.svg");
-}
-.mw-checkbox-wrap input[type="checkbox"]:checked + label:after {
-  background-image: url("../images/forms/check-white.svg");
-}
-.mw-negative-checkbox-wrap input[type="checkbox"]:checked + label:after {
-  background-image: url("../images/forms/check-negative.svg");
-}
-.mw-select-wrap {
-  background-image: url("../images/forms/down-arrow-white.svg");
-}
