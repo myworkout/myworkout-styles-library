@@ -1,3 +1,7 @@
+## 1.12.0 (2019-04-17)
+
+- MYGO-3280 Update special input fields 
+
 ## 1.11.0 (2019-04-11)
 
 - Add checkbox style for radio buttons
