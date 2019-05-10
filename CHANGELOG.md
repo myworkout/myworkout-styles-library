@@ -1,3 +1,7 @@
+## 1.13.0 (2019-05-10)
+
+- MYGO-3313 Update Myworkout logos 
+
 ## 1.12.0 (2019-04-17)
 
 - MYGO-3280 Update special input fields 
