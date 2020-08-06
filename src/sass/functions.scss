@@ -1,3 +1,0 @@
-@function get-form-image($image-name) {
-  @return "#{$mw-path-to-node-modules}/#{$MW_ROOT_FOLDER}/#{$MW_FORM_IMAGES_PATH}/#{$image-name}";
-}
