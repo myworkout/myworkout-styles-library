@@ -1,3 +1,7 @@
+## 1.14.0 (2020-08-06)
+
+- MYGO-4679 Use relative paths when loading images
+
 ## 1.13.0 (2019-05-10)
 
 - MYGO-3313 Update Myworkout logos 
