@@ -70,7 +70,7 @@ Provides classes for form elements
   &.mw-error {
     border: 2px solid $mw-color-error;
     padding: 0 40px 0 14px;
-    background-image: url(get-form-image("error-star.svg"));
+    background-image: url(../../images/forms/error-star.svg);
     background-repeat: no-repeat;
     background-position: right 10px center;
   }
@@ -137,7 +137,7 @@ Provides classes for form elements
     &:checked + label:before {
       border: 1px solid $mw-color-action;
       background-color: $mw-color-action;
-      background-image: url(get-form-image("check-white.svg"));
+      background-image: url(../../images/forms/check-white.svg);
 
     }
     // disabled state label
@@ -187,7 +187,7 @@ Provides classes for form elements
     }
     &:checked + label:before {
       background-color: $MW_COLOR_NEUTRAL_6;
-      background-image: url(get-form-image("check-negative.svg"));
+      background-image: url(../../images/forms/check-negative.svg);
       border: 1px solid $MW_COLOR_NEUTRAL_6;
     }
     &:hover + label:before {
@@ -207,7 +207,7 @@ Provides classes for form elements
   border-radius: 3px;
   overflow: hidden;
   background-color: $MW_COLOR_NEUTRAL_2;
-  background-image: url(get-form-image("down-arrow-white.svg"));
+  background-image: url(../../images/forms/down-arrow-white.svg);
   background-repeat: no-repeat;
   background-position: right 20px center;
   width: 328px;

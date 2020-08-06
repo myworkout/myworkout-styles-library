@@ -43,16 +43,10 @@
                         Top level SASS file of client application should import Myworkout Styles Library like this:
                     </p>
                     <pre>@import "path/to/node_modules/normalize.css/normalize.css";
-$mw-path-to-node-modules: "relative/path/to/node_modules";
 @import "path/to/node_modules/myworkout-styles-library/src/all";</pre>
                     <p>
                         It is recommended to use <code>normalize.css</code> together with this library. In a case of using 3rd party frameworks like Zurb Foundation
                         or Bootstrap, this is not needed since they already import it.
-                    </p>
-                    <p>
-                        Library requires <code>$mw-path-to-node-modules</code> SASS variable to be set before importing the library itself. It should provide
-                        client-specific path to <code>node_modules</code> folder, in a form of a path relative to the file where this library is
-                        going to be compiled by the client.
                     </p>
                     <h3>Old browsers</h3>
                     <p>

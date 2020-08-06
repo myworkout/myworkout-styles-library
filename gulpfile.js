@@ -10,8 +10,8 @@ gulp.task ('default', function (cb) {
 
 // Watch
 gulp.task('watch', function() {
-    gulp.watch('./src/**/*.scss', ['docs-styles']);
-    gulp.watch('./src/docs-assets/scripts.js', ['docs-scripts']);
+    gulp.watch('./src/**/*.scss', gulp.series('docs-styles'));
+    gulp.watch('./src/docs-assets/scripts.js', gulp.series('docs-scripts'));
 });
 
 //_____________________________________________________
@@ -41,7 +41,7 @@ gulp.task('docs-styles', function() {
     ])
         .pipe($.sass())
         .pipe($.autoprefixer('last 6 version'))
-        .pipe($.concatCss('docs.css'))
+        .pipe($.concatCss('docs.css', { rebaseUrls: true, commonBase: 'src' }))
         .pipe($.rename({ suffix: '.min' }))
         .pipe($.cssnano())
         .pipe($.header('/* This file is generated. Edit ./styles.scss instead. */'))
