@@ -1,3 +1,8 @@
+## 1.15.0 (2021-06-08)
+
+- MYGO-5259 Update color palette, add new gradient background colors and add new variables
+- MYGO-4980 Add hover variable
+
 ## 1.14.0 (2020-08-06)
 
 - MYGO-4679 Use relative paths when loading images
