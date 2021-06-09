@@ -1,3 +1,7 @@
+## 1.15.2 (2021-06-09)
+
+- Set correct color on shadow colors variable
+
 ## 1.15.1 (2021-06-09)
 
 - Fix typo in shadow colors variables
