@@ -1,54 +1,46 @@
 // Load plugins
-var gulp = require('gulp'),
-    runSequence = require('run-sequence'),
-    $ = require('gulp-load-plugins')();
+const gulp = require('gulp');
+const autoprefixer = require('gulp-autoprefixer');
+const concat = require('gulp-concat');
+const concatCss = require('gulp-concat-css');
+const cleanCss = require('gulp-clean-css');
+const sass = require('gulp-sass')(require('sass'));
+const rename = require('gulp-rename');
+const uglify = require('gulp-uglify');
 
-// Default
-gulp.task ('default', function (cb) {
-    runSequence('docs', cb);
-});
-
-// Watch
-gulp.task('watch', function() {
-    gulp.watch('./src/**/*.scss', gulp.series('docs-styles'));
-    gulp.watch('./src/docs-assets/scripts.js', gulp.series('docs-scripts'));
-});
+function watch() {
+    gulp.watch('./src/docs-assets/scripts.js', docsScript)
+    gulp.watch('./src/**/*.scss', docsStyles)
+}
 
 //_____________________________________________________
 
 // Build docs
 //_____________________________________________________
-
-// Docs scripts
-gulp.task('docs-scripts', function() {
+function docsScript() {
     return gulp.src([
         './node_modules/jquery/dist/jquery.js',
         './node_modules/browser-detect/dist/browser-detect.umd.js',
         './src/docs-assets/scripts.js'
     ])
-        .pipe($.concat('docs.js'))
-        .pipe($.rename({ suffix: '.min' }))
-        .pipe($.uglify())
-        .pipe($.header('/* This file is generated. Edit ./scripts.js instead. */'))
+        .pipe(concat('docs.js'))
+        .pipe(rename({ suffix: '.min' }))
+        .pipe(uglify())
         .pipe(gulp.dest('./src/docs-assets/'));
-});
+}
 
-// Docs styles
-gulp.task('docs-styles', function() {
+function docsStyles() {
     return gulp.src([
         './node_modules/normalize.css/normalize.css',
         './src/docs-assets/styles.scss'
     ])
-        .pipe($.sass())
-        .pipe($.autoprefixer('last 6 version'))
-        .pipe($.concatCss('docs.css', { rebaseUrls: true, commonBase: 'src' }))
-        .pipe($.rename({ suffix: '.min' }))
-        .pipe($.cssnano())
-        .pipe($.header('/* This file is generated. Edit ./styles.scss instead. */'))
+        .pipe(sass({ outputStyle: 'compressed' }))
+        .pipe(autoprefixer())
+        .pipe(concatCss('docs.css', { rebaseUrls: true, commonBase: 'src' }))
+        .pipe(cleanCss())
+        .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('./src/docs-assets/'));
-});
+}
 
-// Docs all
-gulp.task ('docs', function (cb) {
-    runSequence('docs-scripts', 'docs-styles', cb);
-});
+exports.default = gulp.series(docsScript, docsStyles)
+exports.watch = watch;
