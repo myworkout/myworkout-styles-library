@@ -1,3 +1,7 @@
+## 1.16.0 (2021-12-12)
+
+- Upgrade packages, remove node-sass dependency, and modernise the gulpfile.
+
 ## 1.15.2 (2021-06-09)
 
 - Set correct color on shadow colors variable
