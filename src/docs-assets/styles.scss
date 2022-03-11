@@ -27,7 +27,7 @@ header {
   .navigation {
     text-align: right;
     a {
-      color: $mw-color-inverted;
+      color: $mw-neutral-text-inverted;
       text-decoration: none;
       margin-left: 10px;
     }
@@ -61,36 +61,24 @@ header {
   width: 20px;
   height: 20px;
   vertical-align: middle;
-  border: 1px solid $MW_COLOR_NEUTRAL_1;
-  &.brand1 {
-    background: $MW_COLOR_BRAND_1;
-  }
-  &.brand2 {
-    background: $MW_COLOR_BRAND_2;
-  }
+  border: 1px solid $MW_COLOR_GRAY_1;
   &.neutral1 {
-    background: $MW_COLOR_NEUTRAL_1;
+    background: $MW_COLOR_GRAY_1;
   }
   &.neutral2 {
-    background: $MW_COLOR_NEUTRAL_2;
+    background: $MW_COLOR_GRAY_2;
   }
   &.neutral3 {
-    background: $MW_COLOR_NEUTRAL_3;
+    background: $MW_COLOR_GRAY_3;
   }
   &.neutral4 {
-    background: $MW_COLOR_NEUTRAL_4;
+    background: $MW_COLOR_GRAY_4;
   }
   &.neutral5 {
-    background: $MW_COLOR_NEUTRAL_5;
+    background: $MW_COLOR_GRAY_5;
   }
   &.neutral6 {
-    background: $MW_COLOR_NEUTRAL_6;
-  }
-  &.accent1 {
-    background: $MW_COLOR_ACCENT_1;
-  }
-  &.accent2 {
-    background: $MW_COLOR_ACCENT_2;
+    background: $MW_COLOR_GRAY_6;
   }
   &.gradient1 {
     background: $mw-bg-gradient-1;
@@ -111,37 +99,34 @@ header {
     background: $mw-bg-gradient-2-horizontal;
   }
   &.text-primary {
-    background: $mw-color-text-primary;
+    background: $mw-neutral-text;
   }
   &.text-secondary {
-    background: $mw-color-text-secondary;
+    background: $mw-neutral-gfx;
   }
   &.bg-primary {
-    background: $mw-color-background-primary;
+    background: $mw-background-primary;
   }
   &.bg-secondary {
-    background: $mw-color-background-secondary;
+    background: $mw-background-secondary;
   }
-  &.border-primary {
-    background: $mw-color-border-primary;
-  }
-  &.border-secondary {
-    background: $mw-color-border-secondary;
+  &.border {
+    background: $mw-border;
   }
   &.action {
-    background: $mw-color-action;
+    background: $mw-action-gfx;
   }
   &.error {
-    background: $mw-color-error;
+    background: $mw-error-text;
   }
   &.warning {
-    background: $mw-color-warning;
+    background: $mw-warning;
   }
   &.inactive {
-    background: $mw-color-inactive;
+    background: $mw-disabled;
   }
   &.inverted {
-    background: $mw-color-inverted;
+    background: $mw-neutral-text-inverted;
   }
 }
 .inline-box {
@@ -156,42 +141,42 @@ header {
   margin: 5px 0;
 }
 .example {
-  background: $mw-color-background-secondary;
+  background: $mw-background-secondary;
   padding: 20px;
   margin: 5px 0;
 }
 .underline {
-  border-bottom: 1px solid $mw-color-border-primary;
+  border-bottom: 1px solid $mw-border;
 }
 .demo {
   padding: 20px;
-  border: 1px solid $mw-color-border-primary;
+  border: 1px solid $mw-border;
   margin-bottom: 20px;
 }
 #typo .demo {
   a {
     &.force-default {
-      color: $mw-color-action;
+      color: $mw-action-text;
       &:hover {
-        color: darken($mw-color-action, 20);
+        color: darken($mw-action-text, 20);
       }
     }
     &.force-visited {
-      color: darken($mw-color-action, 20);
+      color: darken($mw-action-text, 20);
       &:hover {
-        color: $mw-color-action;
+        color: $mw-action-text;
       }
     }
   }
 }
 code,
 pre {
-  background: $mw-color-background-secondary;
+  background: $mw-background-secondary;
 }
 .negative-bg {
   display: inline-block;
   padding-left: 10px;
-  background: $MW_COLOR_NEUTRAL_2;
+  background: $MW_COLOR_GRAY_2;
 }
 .skin-demo {
   height: 100px;

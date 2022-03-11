@@ -17,9 +17,9 @@ Provides SASS mixins
   $color-text-hover: $text-color;
   $color-text-active: $text-color;
   $color-border-focus: darken($button-color, $active-darken);
-  $color-background-disabled: $MW_COLOR_NEUTRAL_4;
-  $color-border-disabled: $MW_COLOR_NEUTRAL_4;
-  $color-text-disabled: $MW_COLOR_NEUTRAL_6;
+  $color-background-disabled: $MW_COLOR_GRAY_4;
+  $color-border-disabled: $MW_COLOR_GRAY_4;
+  $color-text-disabled: $MW_COLOR_GRAY_6;
   @if $type == negative {
     $color-background: none;
     $color-background-hover: none;

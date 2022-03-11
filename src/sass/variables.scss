@@ -3,6 +3,11 @@ Provides SASS variables with Myworkout design details.
 These values can be updated by client apps when appropriate.
  */
 
+$mw-mobile-breakpoint: 980px;
+// Devices with a pixel ratio of 2 or a dppx of 2 (i.e. 192 dpi).
+// 0.5px measures won't work for all devices or browsers like Safari and Firefox.
+$min-2x-pixel-ratio: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx)";
+
 /*
   Fonts
  */
@@ -11,62 +16,47 @@ $mw-font-size: $MW_DEFAULT_FONT_SIZE;
 $mw-font-weight: $MW_DEFAULT_FONT_WEIGHT;
 $mw-line-height: $MW_DEFAULT_LINE_HEIGHT;
 
-/*
-* Colour implementation
- */
+/** What about #0EBBC9 (?)
 
 /*
 * Gradient backgrounds
  */
-$mw-bg-gradient-1: linear-gradient(to bottom right, $MW_COLOR_BRAND_1, $MW_COLOR_BRAND_2);
-$mw-bg-gradient-2: linear-gradient(to bottom right, $MW_COLOR_ACCENT_1, $MW_COLOR_ACCENT_2);
-$mw-bg-gradient-1-horizontal: linear-gradient(to right, $MW_COLOR_BRAND_1, $MW_COLOR_BRAND_2);
-$mw-bg-gradient-2-horizontal: linear-gradient(to right, $MW_COLOR_ACCENT_1, $MW_COLOR_ACCENT_2);
-$mw-bg-gradient-1-vertical: linear-gradient(to bottom, $MW_COLOR_BRAND_1, $MW_COLOR_BRAND_2);
-$mw-bg-gradient-2-vertical: linear-gradient(to bottom, $MW_COLOR_ACCENT_1, $MW_COLOR_ACCENT_2);
-$mw-bg-gradient-red: linear-gradient(to bottom right, #FE8947, $MW_COLOR_ACCENT_2);
-$mw-bg-gradient-orange-1: linear-gradient(to bottom right, $MW_COLOR_ACCENT_1, #FC4A35);
-$mw-bg-gradient-orange-2: linear-gradient(to bottom right, $MW_COLOR_ACCENT_1, #FE865F);
-$mw-bg-gradient-blue: linear-gradient(to bottom right, $MW_COLOR_BRAND_1, $MW_COLOR_BRAND_2);
-$mw-bg-gradient-green: linear-gradient(to bottom right, $MW_COLOR_BRAND_1, #AEBF82);
-$mw-bg-gradient-yellow: linear-gradient(to bottom right, #FFE298, $MW_COLOR_ACCENT_1);
+$mw-bg-gradient-1: linear-gradient(to bottom right, #0EBBC9, #5E46BD);
+$mw-bg-gradient-2: linear-gradient(to bottom right, #FEC15F, #FF482A);
+$mw-bg-gradient-1-horizontal: linear-gradient(to right, #0EBBC9, #5E46BD);
+$mw-bg-gradient-2-horizontal: linear-gradient(to right, #FEC15F, #FF482A);
+$mw-bg-gradient-1-vertical: linear-gradient(to bottom, #0EBBC9, #5E46BD);
+$mw-bg-gradient-2-vertical: linear-gradient(to bottom, #FEC15F, #FF482A);
+$mw-bg-gradient-red: linear-gradient(to bottom right, #FE8947, #FF482A);
+$mw-bg-gradient-orange-1: linear-gradient(to bottom right, #FEC15F, #FC4A35);
+$mw-bg-gradient-orange-2: linear-gradient(to bottom right, #FEC15F, #FE865F);
+$mw-bg-gradient-blue: linear-gradient(to bottom right, #0EBBC9, #5E46BD);
+$mw-bg-gradient-green: linear-gradient(to bottom right, #0EBBC9, #AEBF82);
+$mw-bg-gradient-yellow: linear-gradient(to bottom right, #FFE298, #FEC15F);
 $mw-bg-gradient-gold: linear-gradient(135deg, #FFE9A1 0%, #E2BF51 50%, #B59633 50%, #705806 100%);
-$mw-bg-gradient-silver: linear-gradient(135deg, $MW_COLOR_NEUTRAL_5 0%, #A9B1B1 50%, #8A9495 50%, #293333 100%);
+$mw-bg-gradient-silver: linear-gradient(135deg, #F3F5F5 0%, #A9B1B1 50%, #8A9495 50%, #293333 100%);
 $mw-bg-gradient-bronze: linear-gradient(135deg, #F7DBBF 0%, #C59566 50%, #A66C31 50%, #502902 100%);
-
-/*
-* Accents
- */
-$mw-color-constructive: $MW_COLOR_BRAND_1;
-$mw-color-destructive: $MW_COLOR_ACCENT_2;
 
 /*
 * Common colour definitions
  */
-$mw-color-text-primary: $MW_COLOR_NEUTRAL_1;
-$mw-color-text-secondary: $MW_COLOR_NEUTRAL_2;
-$mw-color-background-primary: $MW_COLOR_NEUTRAL_6;
-$mw-color-background-secondary: $MW_COLOR_NEUTRAL_5;
-$mw-color-border-primary: $MW_COLOR_NEUTRAL_4;
-$mw-color-border-secondary: $MW_COLOR_NEUTRAL_3;
-$mw-color-action: $MW_COLOR_BRAND_1;
-$mw-color-error: $MW_COLOR_ACCENT_2;
-$mw-color-warning: $MW_COLOR_ACCENT_1;
-$mw-color-inactive: $MW_COLOR_NEUTRAL_4;
-$mw-color-inverted: $MW_COLOR_NEUTRAL_6;
-
-/*
-* Hover shades
- */
-$mw-color-hover: $MW_COLOR_NEUTRAL_4;
-
-/*
-* Shadow colors
- */
-$mw-color-shadow: $MW_COLOR_NEUTRAL_4;
-$mw-color-shadow-darker: $MW_COLOR_NEUTRAL_1;
-
-/*
-* Select colors
- */
-$mw-color-select: $MW_COLOR_NEUTRAL_2;
+$mw-background-primary: $MW_COLOR_GRAY_6;
+$mw-background-secondary: $MW_COLOR_GRAY_5;
+$mw-background-inverted: $MW_COLOR_GRAY_2;
+$mw-neutral-text: $MW_COLOR_GRAY_1;
+$mw-neutral-text-inverted: $MW_COLOR_GRAY_6;
+$mw-neutral-gfx: $MW_COLOR_GRAY_2;
+$mw-action-text: $MW_COLOR_BLUE_2;
+$mw-action-gfx: $MW_COLOR_BLUE_1;
+$mw-error-text: $MW_COLOR_RED_3;
+$mw-error-gfx: $MW_COLOR_RED_2;
+$mw-warning: $MW_COLOR_ORANGE_3;
+$mw-placeholder: $MW_COLOR_GRAY_3;
+$mw-disabled: $MW_COLOR_GRAY_4;
+$mw-border: transparentize($MW_COLOR_GRAY_4, 0.2);
+$mw-border-inverted: $MW_COLOR_GRAY_2;
+$mw-shadow: transparentize($MW_COLOR_GRAY_4, 0.2);
+$mw-shadow-inverted: $MW_COLOR_GRAY_2;
+$mw-outline: $MW_COLOR_BLUE_1;
+$mw-hover: transparentize($MW_COLOR_GRAY_4, 0.3);
+$mw-dialog-background: transparentize($MW_COLOR_GRAY_2, 0.6)
