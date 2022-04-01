@@ -114,6 +114,9 @@ header {
     background: $mw-border;
   }
   &.action {
+    background: $mw-action-text;
+  }
+  &.action-gfx {
     background: $mw-action-gfx;
   }
   &.error {
