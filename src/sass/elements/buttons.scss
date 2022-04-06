@@ -3,11 +3,11 @@ Provides classes for buttons
  */
 
 .mw-button {
-  @include mw-button(#0EBBC9, $MW_COLOR_GRAY_6);
+  @include mw-button(#0EBBC9, $mw-background-primary);
 }
 .mw-button-negative {
   @include mw-button(#0EBBC9, #0EBBC9, negative);
 }
 .mw-button-simple {
-  @include mw-button($MW_COLOR_GRAY_5, #0EBBC9, simple);
+  @include mw-button($mw-background-secondary, #0EBBC9, simple);
 }

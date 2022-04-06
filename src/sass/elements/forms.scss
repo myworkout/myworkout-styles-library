@@ -186,15 +186,15 @@ Provides classes for form elements
       color: $mw-neutral-text-inverted;
     }
     &:checked + label:before {
-      background-color: $MW_COLOR_GRAY_6;
+      background-color: $mw-background-primary;
       background-image: url(../../images/forms/check-negative.svg);
-      border: 1px solid $MW_COLOR_GRAY_6;
+      border: 1px solid $mw-border;
     }
     &:hover + label:before {
-      border: 1px solid $MW_COLOR_GRAY_6;
+      border: 1px solid $mw-border;
     }
     &:disabled + label:before {
-      background: $MW_COLOR_GRAY_3;
+      background: $mw-disabled;
     }
   }
 }
@@ -203,10 +203,10 @@ Provides classes for form elements
   vertical-align: middle;
   padding: 0 50px 0 0;
   margin: 0;
-  border: 1px solid $MW_COLOR_GRAY_2;
+  border: 1px solid $mw-border;
   border-radius: 3px;
   overflow: hidden;
-  background-color: $MW_COLOR_GRAY_2;
+  background-color: $mw-background-inverted;
   background-image: url(../../images/forms/down-arrow-white.svg);
   background-repeat: no-repeat;
   background-position: right 20px center;
@@ -239,8 +239,8 @@ Provides classes for form elements
     border: 2px solid $mw-error-text;
   }
   &.mw-disabled {
-    background-color: $MW_COLOR_GRAY_4;
-    border-color: $MW_COLOR_GRAY_4;
+    background-color: $mw-disabled;
+    border-color: $mw-disabled;
   }
 }
 .mw-select-fluid-wrap {
@@ -287,8 +287,8 @@ Provides classes for form elements
       left: 0;
       top: 0;
       width: 65px;
-      border: 4px solid $MW_COLOR_GRAY_4;
-      background: $MW_COLOR_GRAY_4;
+      border: 4px solid $mw-disabled;
+      background: $mw-disabled;
       border-radius: 22px;
       z-index: -1;
     }
@@ -296,7 +296,7 @@ Provides classes for form elements
     &:checked + label:after {
       left: 4px;
       top: 4px;
-      background-color: $MW_COLOR_GRAY_6;
+      background-color: $mw-background-primary;
       border-radius: 50%;
       width: 36px;
     }
@@ -304,8 +304,8 @@ Provides classes for form elements
       left: 32px;
     }
     &:checked + label:before {
-      background-color: #0EBBC9;
-      border-color: #0EBBC9;
+      background-color: $mw-action-gfx;
+      border-color: $mw-action-gfx;
     }
     &:disabled + label {
       opacity: .5;

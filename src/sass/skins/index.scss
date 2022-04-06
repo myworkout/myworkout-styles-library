@@ -17,16 +17,16 @@ Provides all MSL skin classes: partial styles for HTML elements
     content: " ";
     display: block;
     height: 1px;
-    background: linear-gradient(90deg, #0EBBC9, #5E46BD);
+    background: $mw-bg-gradient-1-horizontal;
   }
 }
 .mw-fallback-css .mw-brand-underline::after {
-  background: #0EBBC9;
+  background: $mw-action-gfx;
 }
 .mw-accent-underline {
   @extend .mw-brand-underline;
   &::after {
-    background: linear-gradient(90deg, $MW_COLOR_ORANGE_1, $MW_COLOR_RED_2);
+    background: $mw-bg-gradient-2-horizontal;
   }
 }
 .mw-fallback-css .mw-accent-underline::after {
