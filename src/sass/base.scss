@@ -6,8 +6,8 @@ body {
   font-family: $mw-font;
   font-size: $mw-font-size;
   font-weight: $mw-font-weight;
-  background: $mw-color-background-primary;
-  color: $mw-color-text-primary;
+  background: $mw-background-primary;
+  color: $mw-neutral-text;
   line-height: $mw-line-height;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -16,21 +16,21 @@ div {
   box-sizing: border-box;
 }
 a {
-  color: $mw-color-action;
+  color: $mw-action-text;
   transition: all .3s ease;
   &:hover {
-    color: darken($mw-color-action, 20);
+    color: darken($mw-action-text, 20);
   }
   &:visited,
   &:active,
   &:focus {
-    color: darken($mw-color-action, 20);
+    color: darken($mw-action-text, 20);
     &:hover {
-      color: $mw-color-action;
+      color: $mw-action-text;
     }
   }
   &::selection {
-    color: $MW_COLOR_NEUTRAL_1;
+    color: $mw-neutral-text;
   }
 }
 strong,
@@ -38,5 +38,5 @@ b {
   font-weight: 600;
 }
 ::selection {
-  background: lighten($MW_COLOR_BRAND_1, 20);
+  background: lighten(#0EBBC9, 20);
 }
