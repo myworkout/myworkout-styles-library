@@ -3,11 +3,6 @@ Provides SASS variables with Myworkout design details.
 These values can be updated by client apps when appropriate.
  */
 
-$mw-mobile-breakpoint: 980px;
-// Devices with a pixel ratio of 2 or a dppx of 2 (i.e. 192 dpi).
-// 0.5px measures won't work for all devices or browsers like Safari and Firefox.
-$min-2x-pixel-ratio: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx)";
-
 /*
   Fonts
  */
