@@ -33,11 +33,11 @@ Provides classes for typography (typography for HTML elements defined in src/sas
 }
 .mw-quote {
   line-height: $mw-line-height;
-  color: $mw-neutral-text;
+  color: $mw-color-neutral-text;
   margin: 20px 0;
   padding: 20px 20px 20px 40px;
-  border-left: 4px solid $mw-border;
-  background: $mw-background-secondary;
+  border-left: 4px solid $mw-color-border;
+  background: $mw-color-background-secondary;
 }
 article,
 .mw-article {

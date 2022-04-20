@@ -10,14 +10,14 @@ Provides classes for form elements
   font-size: 19px;
   font-weight: $mw-font-weight;
   line-height: $mw-line-height;
-  color: $mw-neutral-text;
+  color: $mw-color-neutral-text;
   height: 44px;
   background: none;
   outline: none;
   box-shadow: none;
   margin: 0;
   &::placeholder {
-    color: $mw-placeholder;
+    color: $mw-color-placeholder;
   }
   &:disabled {
     cursor: auto;
@@ -47,28 +47,28 @@ Provides classes for form elements
     content: " ";
     display: block;
     height: 1px;
-    background: $mw-action-gfx;
+    background: $mw-color-action-gfx;
   }
   &.mw-error {
     &::after {
-      background: $mw-error-text;
+      background: $mw-color-error-text;
     }
   }
 }
 .mw-input {
   width: 328px;
-  border: 1px solid $mw-border;
+  border: 1px solid $mw-color-border;
   border-radius: 4px;
   padding: 0 15px;
   @extend .mw-input-model;
   &:focus {
     padding: 0 14px;
-    border: 2px solid $mw-action-gfx;
+    border: 2px solid $mw-color-action-gfx;
     box-shadow: none;
     background: none;
   }
   &.mw-error {
-    border: 2px solid $mw-error-text;
+    border: 2px solid $mw-color-error-text;
     padding: 0 40px 0 14px;
     background-image: url(../../images/forms/error-star.svg);
     background-repeat: no-repeat;
@@ -118,7 +118,7 @@ Provides classes for form elements
       vertical-align: text-top;
       width: 20px;
       height: 20px;
-      border: 1px solid $mw-border;
+      border: 1px solid $mw-color-border;
       border-radius: 50%;
       background-color: transparent;
       background-repeat: no-repeat;
@@ -127,7 +127,7 @@ Provides classes for form elements
     }
     // box hover
     &:hover + label:before {
-      border: 1px solid $mw-border;
+      border: 1px solid $mw-color-border;
     }
     // box focus
     &:focus + label:before {
@@ -135,19 +135,19 @@ Provides classes for form elements
     }
     // box checked
     &:checked + label:before {
-      border: 1px solid $mw-action-gfx;
-      background-color: $mw-action-gfx;
+      border: 1px solid $mw-color-action-gfx;
+      background-color: $mw-color-action-gfx;
       background-image: url(../../images/forms/check-white.svg);
 
     }
     // disabled state label
     &:disabled + label {
-      color: $mw-disabled;
+      color: $mw-color-disabled;
       cursor: auto;
     }
     // disabled box.
     &:disabled + label:before {
-      background: $mw-background-secondary;
+      background: $mw-color-background-secondary;
     }
   }
 }
@@ -183,18 +183,18 @@ Provides classes for form elements
   @extend .mw-checkbox-wrap;
   input[type="checkbox"], input[type="radio"] {
     & + label {
-      color: $mw-neutral-text-inverted;
+      color: $mw-color-neutral-text-inverted;
     }
     &:checked + label:before {
-      background-color: $mw-background-primary;
+      background-color: $mw-color-background-primary;
       background-image: url(../../images/forms/check-negative.svg);
-      border: 1px solid $mw-border;
+      border: 1px solid $mw-color-border;
     }
     &:hover + label:before {
-      border: 1px solid $mw-border;
+      border: 1px solid $mw-color-border;
     }
     &:disabled + label:before {
-      background: $mw-disabled;
+      background: $mw-color-disabled;
     }
   }
 }
@@ -203,10 +203,10 @@ Provides classes for form elements
   vertical-align: middle;
   padding: 0 50px 0 0;
   margin: 0;
-  border: 1px solid $mw-border;
+  border: 1px solid $mw-color-border;
   border-radius: 3px;
   overflow: hidden;
-  background-color: $mw-background-inverted;
+  background-color: $mw-color-background-inverted;
   background-image: url(../../images/forms/down-arrow-white.svg);
   background-repeat: no-repeat;
   background-position: right 20px center;
@@ -223,7 +223,7 @@ Provides classes for form elements
     background-color: transparent;
     background-image: none;
     appearance: none;
-    color: $mw-neutral-text-inverted;
+    color: $mw-color-neutral-text-inverted;
     cursor: pointer;
     &:focus {
       outline: none;
@@ -232,15 +232,15 @@ Provides classes for form elements
       cursor: auto;
     }
     option {
-      color: $mw-neutral-text;
+      color: $mw-color-neutral-text;
     }
   }
   &.mw-error {
-    border: 2px solid $mw-error-text;
+    border: 2px solid $mw-color-error-text;
   }
   &.mw-disabled {
-    background-color: $mw-disabled;
-    border-color: $mw-disabled;
+    background-color: $mw-color-disabled;
+    border-color: $mw-color-disabled;
   }
 }
 .mw-select-fluid-wrap {
@@ -270,7 +270,7 @@ Provides classes for form elements
       cursor: pointer;
       margin: 0;
       line-height: $mw-line-height;
-      color: $mw-neutral-text;
+      color: $mw-color-neutral-text;
     }
     &:not(:checked) + label:before,
     &:checked + label:before,
@@ -287,8 +287,8 @@ Provides classes for form elements
       left: 0;
       top: 0;
       width: 65px;
-      border: 4px solid $mw-disabled;
-      background: $mw-disabled;
+      border: 4px solid $mw-color-disabled;
+      background: $mw-color-disabled;
       border-radius: 22px;
       z-index: -1;
     }
@@ -296,7 +296,7 @@ Provides classes for form elements
     &:checked + label:after {
       left: 4px;
       top: 4px;
-      background-color: $mw-background-primary;
+      background-color: $mw-color-background-primary;
       border-radius: 50%;
       width: 36px;
     }
@@ -304,8 +304,8 @@ Provides classes for form elements
       left: 32px;
     }
     &:checked + label:before {
-      background-color: $mw-action-gfx;
-      border-color: $mw-action-gfx;
+      background-color: $mw-color-action-gfx;
+      border-color: $mw-color-action-gfx;
     }
     &:disabled + label {
       opacity: .5;
@@ -315,7 +315,7 @@ Provides classes for form elements
 }
 .mw-label {
   display: inline-block;
-  color: $mw-neutral-text;
+  color: $mw-color-neutral-text;
   font-size: 16px;
   padding: 2px 0 4px 0;
   line-height: $mw-line-height;

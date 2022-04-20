@@ -33,23 +33,23 @@ $mw-bg-gradient-bronze: linear-gradient(135deg, #F7DBBF 0%, #C59566 50%, #A66C31
 /*
 * Common colour definitions
  */
-$mw-background-primary: $MW_COLOR_GRAY_6;
-$mw-background-secondary: $MW_COLOR_GRAY_5;
-$mw-background-inverted: $MW_COLOR_GRAY_2;
-$mw-neutral-text: $MW_COLOR_GRAY_1;
-$mw-neutral-text-inverted: $MW_COLOR_GRAY_6;
-$mw-neutral-gfx: $MW_COLOR_GRAY_2;
-$mw-action-text: $MW_COLOR_BLUE_2;
-$mw-action-gfx: $MW_COLOR_BLUE_1;
-$mw-error-text: $MW_COLOR_RED_3;
-$mw-error-gfx: $MW_COLOR_RED_2;
-$mw-warning: $MW_COLOR_ORANGE_3;
-$mw-placeholder: $MW_COLOR_GRAY_3;
-$mw-disabled: $MW_COLOR_GRAY_4;
-$mw-border: transparentize($MW_COLOR_GRAY_4, 0.2);
-$mw-border-inverted: $MW_COLOR_GRAY_2;
-$mw-shadow: transparentize($MW_COLOR_GRAY_4, 0.2);
-$mw-shadow-inverted: $MW_COLOR_GRAY_2;
-$mw-outline: $MW_COLOR_BLUE_1;
-$mw-hover: transparentize($MW_COLOR_GRAY_4, 0.3);
-$mw-dialog-background: transparentize($MW_COLOR_GRAY_2, 0.6)
+$mw-color-background-primary: $MW_COLOR_GRAY_6;
+$mw-color-background-secondary: $MW_COLOR_GRAY_5;
+$mw-color-background-inverted: $MW_COLOR_GRAY_2;
+$mw-color-neutral-text: $MW_COLOR_GRAY_1;
+$mw-color-neutral-text-inverted: $MW_COLOR_GRAY_6;
+$mw-color-neutral-gfx: $MW_COLOR_GRAY_2;
+$mw-color-action-text: $MW_COLOR_BLUE_2;
+$mw-color-action-gfx: $MW_COLOR_BLUE_1;
+$mw-color-error-text: $MW_COLOR_RED_3;
+$mw-color-error-gfx: $MW_COLOR_RED_2;
+$mw-color-warning: $MW_COLOR_ORANGE_3;
+$mw-color-placeholder: $MW_COLOR_GRAY_3;
+$mw-color-disabled: $MW_COLOR_GRAY_4;
+$mw-color-border: transparentize($MW_COLOR_GRAY_4, 0.2);
+$mw-color-border-inverted: $MW_COLOR_GRAY_2;
+$mw-color-shadow: transparentize($MW_COLOR_GRAY_4, 0.2);
+$mw-color-shadow-inverted: $MW_COLOR_GRAY_2;
+$mw-color-outline: $MW_COLOR_BLUE_1;
+$mw-color-hover: transparentize($MW_COLOR_GRAY_4, 0.3);
+$mw-color-dialog-background: transparentize($MW_COLOR_GRAY_2, 0.6)
