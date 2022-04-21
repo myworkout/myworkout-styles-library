@@ -85,7 +85,7 @@ Provides SASS mixins
   }
 }
 
-@mixin embossed {
+@mixin debossed {
   background-color: #EDF1F1;
   box-shadow: 0 1px 0 $mw-color-background-primary,
     inset 0 1px 0 $mw-color-shadow,
