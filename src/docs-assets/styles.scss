@@ -27,7 +27,7 @@ header {
   .navigation {
     text-align: right;
     a {
-      color: $mw-neutral-text-inverted;
+      color: $mw-color-neutral-text-inverted;
       text-decoration: none;
       margin-left: 10px;
     }
@@ -99,37 +99,37 @@ header {
     background: $mw-bg-gradient-2-horizontal;
   }
   &.text-primary {
-    background: $mw-neutral-text;
+    background: $mw-color-neutral-text;
   }
   &.text-secondary {
-    background: $mw-neutral-gfx;
+    background: $mw-color-neutral-gfx;
   }
   &.bg-primary {
-    background: $mw-background-primary;
+    background: $mw-color-background-primary;
   }
   &.bg-secondary {
-    background: $mw-background-secondary;
+    background: $mw-color-background-secondary;
   }
   &.border {
-    background: $mw-border;
+    background: $mw-color-border;
   }
   &.action {
-    background: $mw-action-text;
+    background: $mw-color-action-text;
   }
   &.action-gfx {
-    background: $mw-action-gfx;
+    background: $mw-color-action-gfx;
   }
   &.error {
-    background: $mw-error-text;
+    background: $mw-color-error-text;
   }
   &.warning {
-    background: $mw-warning;
+    background: $mw-color-warning;
   }
   &.inactive {
-    background: $mw-disabled;
+    background: $mw-color-disabled;
   }
   &.inverted {
-    background: $mw-neutral-text-inverted;
+    background: $mw-color-neutral-text-inverted;
   }
 }
 .inline-box {
@@ -144,37 +144,37 @@ header {
   margin: 5px 0;
 }
 .example {
-  background: $mw-background-secondary;
+  background: $mw-color-background-secondary;
   padding: 20px;
   margin: 5px 0;
 }
 .underline {
-  border-bottom: 1px solid $mw-border;
+  border-bottom: 1px solid $mw-color-border;
 }
 .demo {
   padding: 20px;
-  border: 1px solid $mw-border;
+  border: 1px solid $mw-color-border;
   margin-bottom: 20px;
 }
 #typo .demo {
   a {
     &.force-default {
-      color: $mw-action-text;
+      color: $mw-color-action-text;
       &:hover {
-        color: darken($mw-action-text, 20);
+        color: darken($mw-color-action-text, 20);
       }
     }
     &.force-visited {
-      color: darken($mw-action-text, 20);
+      color: darken($mw-color-action-text, 20);
       &:hover {
-        color: $mw-action-text;
+        color: $mw-color-action-text;
       }
     }
   }
 }
 code,
 pre {
-  background: $mw-background-secondary;
+  background: $mw-color-background-secondary;
 }
 .negative-bg {
   display: inline-block;

@@ -17,9 +17,9 @@ Provides SASS mixins
   $color-text-hover: $text-color;
   $color-text-active: $text-color;
   $color-border-focus: darken($button-color, $active-darken);
-  $color-background-disabled: $mw-disabled;
-  $color-border-disabled: $mw-disabled;
-  $color-text-disabled: $mw-neutral-text-inverted;
+  $color-background-disabled: $mw-color-disabled;
+  $color-border-disabled: $mw-color-disabled;
+  $color-text-disabled: $mw-color-neutral-text-inverted;
   @if $type == negative {
     $color-background: none;
     $color-background-hover: none;
@@ -83,4 +83,11 @@ Provides SASS mixins
   &.mw-full-width {
     width: 100%;
   }
+}
+
+@mixin debossed {
+  background-color: #EDF1F1;
+  box-shadow: 0 1px 0 $mw-color-background-primary,
+    inset 0 1px 0 $mw-color-shadow,
+    inset 0 2px 4px change-color($mw-color-shadow, $alpha: 0.2);
 }

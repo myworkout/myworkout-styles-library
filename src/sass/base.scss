@@ -6,8 +6,8 @@ body {
   font-family: $mw-font;
   font-size: $mw-font-size;
   font-weight: $mw-font-weight;
-  background: $mw-background-primary;
-  color: $mw-neutral-text;
+  background: $mw-color-background-primary;
+  color: $mw-color-neutral-text;
   line-height: $mw-line-height;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -16,21 +16,21 @@ div {
   box-sizing: border-box;
 }
 a {
-  color: $mw-action-text;
+  color: $mw-color-action-text;
   transition: all .3s ease;
   &:hover {
-    color: darken($mw-action-text, 20);
+    color: darken($mw-color-action-text, 20);
   }
   &:visited,
   &:active,
   &:focus {
-    color: darken($mw-action-text, 20);
+    color: darken($mw-color-action-text, 20);
     &:hover {
-      color: $mw-action-text;
+      color: $mw-color-action-text;
     }
   }
   &::selection {
-    color: $mw-neutral-text;
+    color: $mw-color-neutral-text;
   }
 }
 strong,
