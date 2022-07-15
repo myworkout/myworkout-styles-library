@@ -4,7 +4,7 @@ const autoprefixer = require('gulp-autoprefixer');
 const concat = require('gulp-concat');
 const concatCss = require('gulp-concat-css');
 const cleanCss = require('gulp-clean-css');
-const sass = require('gulp-sass')(require('sass'));
+const gulpSass = require('gulp-dart-sass');
 const rename = require('gulp-rename');
 const uglify = require('gulp-uglify');
 
@@ -34,7 +34,7 @@ function docsStyles() {
         './node_modules/normalize.css/normalize.css',
         './src/docs-assets/styles.scss'
     ])
-        .pipe(sass({ outputStyle: 'compressed' }))
+        .pipe(gulpSass({ outputStyle: 'compressed' }))
         .pipe(autoprefixer())
         .pipe(concatCss('docs.css', { rebaseUrls: true, commonBase: 'src' }))
         .pipe(cleanCss())
