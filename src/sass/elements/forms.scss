@@ -70,7 +70,7 @@ Provides classes for form elements
   &.mw-error {
     border: 2px solid $mw-color-error-text;
     padding: 0 40px 0 14px;
-    background-image: url(../../images/forms/error-star.svg);
+    background-image: url("data:image/svg+xml,%3Csvg width='22px' height='21px' viewBox='0 0 22 21' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3C!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch --%3E%3Cdesc%3ECreated with Sketch.%3C/desc%3E%3Cdefs%3E%3C/defs%3E%3Cg id='Symbols' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='/Input/Icon/Error' fill='%23FF482A'%3E%3Cpolygon id='Page-1' points='8.92528868 0 8.92528868 8.06598315 1.28224327 5.57340248 0 9.53408725 7.64304541 12.0266679 2.91946078 18.552084 6.27625977 21 10.9999481 14.4744798 15.7236365 21 19.0805392 18.552084 14.3567471 12.0266679 22 9.53408725 20.7177567 5.57340248 13.0746076 8.06598315 13.0746076 0'%3E%3C/polygon%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-position: right 10px center;
   }
@@ -137,7 +137,7 @@ Provides classes for form elements
     &:checked + label:before {
       border: 1px solid $mw-color-action-gfx;
       background-color: $mw-color-action-gfx;
-      background-image: url(../../images/forms/check-white.svg);
+      background-image: url("data:image/svg+xml,%3Csvg width='14px' height='10px' viewBox='0 0 14 10' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3C!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch --%3E%3Cdesc%3ECreated with Sketch.%3C/desc%3E%3Cdefs%3E%3C/defs%3E%3Cg id='Symbols' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='-/Checkbox/Checked' transform='translate(-4.000000, -6.000000)' stroke-width='1.2244898' stroke='%23FFFFFF'%3E%3Cpolyline id='Left-check' points='5 11.0463088 9.11306122 15 17 7'%3E%3C/polyline%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 
     }
     // disabled state label
@@ -187,8 +187,8 @@ Provides classes for form elements
     }
     &:checked + label:before {
       background-color: $mw-color-background-primary;
-      background-image: url(../../images/forms/check-negative.svg);
       border: 1px solid $mw-color-border;
+      background-image: url("data:image/svg+xml,%0A%3Csvg width='14px' height='10px' viewBox='0 0 14 10' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3C!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch --%3E%3Cdesc%3ECreated with Sketch.%3C/desc%3E%3Cdefs%3E%3C/defs%3E%3Cg id='Symbols' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='Filter/Unchecked' transform='translate(-5.000000, -7.000000)' stroke-width='1.2244898' stroke='%23657272'%3E%3Cg id='-/Checkbox/Checked' transform='translate(1.000000, 1.000000)'%3E%3Cpolyline id='Left-check' points='5 11.0463088 9.11306122 15 17 7'%3E%3C/polyline%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     }
     &:hover + label:before {
       border: 1px solid $mw-color-border;
@@ -207,7 +207,7 @@ Provides classes for form elements
   border-radius: 3px;
   overflow: hidden;
   background-color: $mw-color-background-inverted;
-  background-image: url(../../images/forms/down-arrow-white.svg);
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='21px' height='12px' viewBox='0 0 21 12' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3C!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch --%3E%3Ctitle%3E%3C/title%3E%3Cdesc%3ECreated with Sketch.%3C/desc%3E%3Cdefs%3E%3C/defs%3E%3Cg id='Form/Field/Select' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' transform='translate(-244.000000, -16.000000)' stroke-linecap='round'%3E%3Cpolyline id='-' stroke='%23FFFFFF' points='265 17 254.5 27 244 17'%3E%3C/polyline%3E%3C/g%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: right 20px center;
   width: 328px;
