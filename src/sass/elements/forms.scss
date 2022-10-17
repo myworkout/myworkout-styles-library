@@ -8,7 +8,7 @@ Provides classes for form elements
   width: 100%;
   font-family: $mw-font;
   font-size: 19px;
-  font-weight: $mw-font-weight;
+  font-weight: $mw-standard-font-weight;
   line-height: $mw-line-height;
   color: $mw-color-neutral-text;
   height: 44px;
@@ -214,7 +214,7 @@ Provides classes for form elements
   select {
     font-family: $mw-font;
     font-size: 19px;
-    font-weight: $mw-font-weight;
+    font-weight: $mw-standard-font-weight;
     padding: 0 20px;
     width: calc(100% + 50px); // pixels to add on 100% gotta be same as right padding of .mw-select-wrap
     height: 44px;
@@ -263,7 +263,7 @@ Provides classes for form elements
     &:checked + label {
       position: relative;
       font-family: $mw-font;
-      font-weight: $mw-font-weight;
+      font-weight: $mw-standard-font-weight;
       font-size: 19px;
       padding-left: 85px;
       padding-top: 10px;

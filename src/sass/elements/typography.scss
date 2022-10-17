@@ -5,7 +5,7 @@ Provides classes for typography (typography for HTML elements defined in src/sas
 .mw-text {
   font-family: $mw-font;
   line-height: $mw-line-height;
-  font-weight: $mw-font-weight;
+  font-weight: $mw-standard-font-weight;
 }
 .mw-title {
   @extend .mw-text;

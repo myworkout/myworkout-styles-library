@@ -5,7 +5,7 @@ Provides all MSL base rules
 body {
   font-family: $mw-font;
   font-size: $mw-font-size;
-  font-weight: $mw-font-weight;
+  font-weight: $mw-standard-font-weight;
   background: $mw-color-background-primary;
   color: $mw-color-neutral-text;
   line-height: $mw-line-height;
@@ -35,7 +35,7 @@ a {
 }
 strong,
 b {
-  font-weight: 600;
+  font-weight: $mw-highlight-font-weight;
 }
 ::selection {
   background: lighten(#0EBBC9, 20);
