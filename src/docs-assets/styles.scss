@@ -2,6 +2,7 @@
   Styles for docs.html page
 */
 
+@use "sass:color";
 @use "../all" as *;
 
 /* Layout rules */
@@ -161,11 +162,11 @@ header {
     &.force-default {
       color: $mw-color-action-text;
       &:hover {
-        color: darken($mw-color-action-text, 20);
+        color: color.adjust($mw-color-action-text, $lightness: -20%);
       }
     }
     &.force-visited {
-      color: darken($mw-color-action-text, 20);
+      color: color.adjust($mw-color-action-text, $lightness: -20%);
       &:hover {
         color: $mw-color-action-text;
       }

@@ -2,6 +2,7 @@
 Provides SASS mixins
  */
 
+@use "sass:color";
 @use "constants" as *;
 @use "variables" as *;
 
@@ -11,15 +12,15 @@ Provides SASS mixins
   $hover-darken: 7;
   $active-darken: 14;
   $color-background: $button-color;
-  $color-background-hover: darken($button-color, $hover-darken);
-  $color-background-active: darken($button-color, $active-darken);
+  $color-background-hover: color.adjust($button-color, $lightness: -$hover-darken * 1%);
+  $color-background-active: color.adjust($button-color, $lightness: -$active-darken * 1%);
   $color-border: $button-color;
-  $color-border-hover: darken($button-color, $hover-darken);
-  $color-border-active: darken($button-color, $active-darken);
+  $color-border-hover: color.adjust($button-color, $lightness: -$hover-darken * 1%);
+  $color-border-active: color.adjust($button-color, $lightness: -$active-darken * 1%);
   $color-text: $text-color;
   $color-text-hover: $text-color;
   $color-text-active: $text-color;
-  $color-border-focus: darken($button-color, $active-darken);
+  $color-border-focus: color.adjust($button-color, $lightness: -$active-darken * 1%);
   $color-background-disabled: $mw-color-disabled;
   $color-border-disabled: $mw-color-disabled;
   $color-text-disabled: $mw-color-neutral-text-inverted;
@@ -28,11 +29,11 @@ Provides SASS mixins
     $color-background-hover: none;
     $color-background-active: none;
     $color-border: $button-color;
-    $color-border-hover: darken($button-color, $hover-darken);
-    $color-border-active: darken($button-color, $active-darken);
+    $color-border-hover: color.adjust($button-color, $lightness: -$hover-darken * 1%);
+    $color-border-active: color.adjust($button-color, $lightness: -$active-darken * 1%);
     $color-text: $text-color;
-    $color-text-hover: darken($button-color, $hover-darken);
-    $color-text-active: darken($button-color, $active-darken);
+    $color-text-hover: color.adjust($button-color, $lightness: -$hover-darken * 1%);
+    $color-text-active: color.adjust($button-color, $lightness: -$active-darken * 1%);
     $color-border-focus: $text-color;
     $color-background-disabled: none;
     $color-border-disabled: rgba($button-color, .4);
@@ -41,7 +42,7 @@ Provides SASS mixins
   @if $type == simple {
     $color-background-hover: rgba($button-color, .1);
     $color-background-active: rgba($button-color, .2);
-    $color-text-hover: darken($text-color, $hover-darken);
+    $color-text-hover: color.adjust($text-color, $lightness: -$hover-darken * 1%);
     $color-border-focus: $text-color;
     $color-background: transparent;
     $color-border: transparent;
