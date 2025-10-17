@@ -2,6 +2,9 @@
 Provides SASS mixins
  */
 
+@use "constants" as *;
+@use "variables" as *;
+
 @mixin mw-button ($button-color, $text-color, $type: null) {
   $height: 44px;
   $border-width: 1px;

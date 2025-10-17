@@ -2,6 +2,9 @@
 Provides all MSL base rules
  */
 
+@use "constants" as *;
+@use "variables" as *;
+
 body {
   font-family: $mw-font;
   font-size: $mw-font-size;

@@ -2,6 +2,9 @@
 Provides classes for typography (typography for HTML elements defined in src/sass/base.scss)
  */
 
+@use "../constants" as *;
+@use "../variables" as *;
+
 .mw-text {
   font-family: $mw-font;
   line-height: $mw-line-height;

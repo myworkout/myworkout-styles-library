@@ -2,6 +2,9 @@
 Provides all MSL skin classes: partial styles for HTML elements
  */
 
+@use "../constants" as *;
+@use "../variables" as *;
+
 .mw-brand-bg {
   background: $mw-bg-gradient-1;
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0EBBC9', endColorstr='#5E46BD',GradientType=0 );

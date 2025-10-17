@@ -2,6 +2,9 @@
 Provides classes for form elements
  */
 
+@use "../constants" as *;
+@use "../variables" as *;
+
 .mw-input-model {
   display: inline-block;
   box-sizing: border-box;

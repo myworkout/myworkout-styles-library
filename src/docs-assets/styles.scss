@@ -2,7 +2,7 @@
   Styles for docs.html page
 */
 
-@import "../all";
+@use "../all" as *;
 
 /* Layout rules */
 header {
