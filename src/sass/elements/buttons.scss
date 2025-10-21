@@ -2,6 +2,10 @@
 Provides classes for buttons
  */
 
+@use "../constants" as *;
+@use "../variables" as *;
+@use "../mixins" as *;
+
 .mw-button {
   @include mw-button(#0EBBC9, $mw-color-background-primary);
 }

@@ -2,6 +2,10 @@
 Provides all MSL base rules
  */
 
+@use "sass:color";
+@use "constants" as *;
+@use "variables" as *;
+
 body {
   font-family: $mw-font;
   font-size: $mw-font-size;
@@ -19,12 +23,12 @@ a {
   color: $mw-color-action-text;
   transition: all .3s ease;
   &:hover {
-    color: darken($mw-color-action-text, 20);
+    color: color.adjust($mw-color-action-text, $lightness: -20%);
   }
   &:visited,
   &:active,
   &:focus {
-    color: darken($mw-color-action-text, 20);
+    color: color.adjust($mw-color-action-text, $lightness: -20%);
     &:hover {
       color: $mw-color-action-text;
     }
@@ -38,5 +42,5 @@ b {
   font-weight: $mw-highlight-font-weight;
 }
 ::selection {
-  background: lighten(#0EBBC9, 20);
+  background: color.adjust(#0EBBC9, $lightness: 20%);
 }

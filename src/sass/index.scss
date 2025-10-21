@@ -2,10 +2,12 @@
 Provides all MSL components
  */
 
-@import "fonts";
-@import "constants";
-@import "variables";
-@import "mixins";
-@import "base";
-@import "elements/index";
-@import "skins/index";
+@use "fonts";
+@forward "constants";
+@forward "variables";
+@use "constants" as *;
+@use "variables" as *;
+@use "mixins";
+@use "base";
+@use "elements/index" as elements;
+@use "skins/index" as skins;
